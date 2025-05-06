@@ -1,5 +1,8 @@
 // TODO.txt
+// Início do projeto: 06/05/2025
 // Lista o que fazer
+- incluir metadata no index.html
+- zerar estilos body index.html
 - trocar título html
 - colocar favicon
 
