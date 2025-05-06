@@ -1,14 +1,12 @@
 // TODO.txt
 // Lista o que fazer
+- trocar título html
+- colocar favicon
+
+
+> FEITO
 - zerar estilos index.html
 - main.jsx (editar)
 - App.jsx (editar)
 - index.css (apagar ou editar)
 - App.css (apagar ou editar)
-- trocar título html
-- colocar favicon
-
-
-
-> FEITO
-
