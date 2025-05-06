@@ -1,0 +1,48 @@
+/* Header.jsx */
+/* NOTA: colocar cada elemento em div, pois assim ficou parecido com o modelo */
+
+.header {
+    width: 100%;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+
+}
+
+/* div dos 2 Links */
+.botesConta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+/* o a (que é link no html) é o Link (react) */
+#btCadastre > a {
+    color: var(--dark-gray-2);
+    font-size: 16px;
+}
+
+#btEntrar {
+    width: 114px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    border-radius: 4px;
+    
+}
+/* tive que fazer isso pois não estava parecido com o modelo */
+#btEntrar > a {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.divCarrinho {
+    margin: 0 0px 0 90px;
+}

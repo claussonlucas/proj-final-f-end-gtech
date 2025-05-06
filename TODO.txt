@@ -5,7 +5,7 @@
 - zerar estilos body index.html
 - trocar título html
 - colocar favicon
-
+- ver como saber a fonte de texto usada
 
 > FEITO
 - zerar estilos index.html
@@ -13,3 +13,5 @@
 - App.jsx (editar)
 - index.css (apagar ou editar)
 - App.css (apagar ou editar)
+- ver como criar var para cores
+- editar tamanho da imagem do carrinho (header)
