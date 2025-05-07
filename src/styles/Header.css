@@ -1,4 +1,4 @@
-/* Header.jsx */
+/* Header.css */
 /* NOTA: colocar cada elemento em div, pois assim ficou parecido com o modelo */
 
 .header {
@@ -7,8 +7,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: aqua; */
-
 }
 
 /* div dos 2 Links */
