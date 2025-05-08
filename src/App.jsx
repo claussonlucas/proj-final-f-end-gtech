@@ -2,7 +2,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './components/Home'
 
-import "primereact/resources/themes/lara-light-indigo/theme.css";
+/*
+primereact/resources/themes/bootstrap4-light-purple/theme.css
+primereact/resources/themes/lara-dark-purple/theme.css
+primereact/resources/themes/saga-purple/theme.css #
+*/
+import "primereact/resources/themes/bootstrap4-light-purple/theme.css";
 import "primeflex/primeflex.css";
 import "primeicons/primeicons.css";
 

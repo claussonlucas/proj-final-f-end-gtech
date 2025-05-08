@@ -6,6 +6,9 @@
 - trocar título html
 - colocar favicon
 - ver como saber a fonte de texto usada
+- como colocar linha no menu da página atual
+- distância entre menu e linha
+- distância entre parte de cima do header e menu
 
 > FEITO
 - zerar estilos index.html

@@ -10,6 +10,7 @@ import "../styles/Header.css";
 import { InputText } from 'primereact/inputtext';
 import { IconField } from 'primereact/iconfield';
 import { InputIcon } from 'primereact/inputicon';
+import MenuBar from "./MenuBar";
 
 const Header = () => {
     return (
@@ -34,6 +35,7 @@ const Header = () => {
                 <div className="divCarrinho"><img src={imgCar} alt="Imagem Carrinho de Compras" /></div>
             </div>
 
+            <MenuBar />
         </>
     );
 }
