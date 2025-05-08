@@ -1,0 +1,51 @@
+/* footer.css */
+
+footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    
+}
+
+.containerFooter {
+    width: 85%;
+    /*
+    background-color: blue;
+    padding: 40px ; */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+.divMain {
+    
+     /* background-color: aquamarine;apagar */
+}
+
+.divInfo {
+    background-color: bisque;
+    
+}
+
+.logosSocial {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 35px;
+}
+
+.finalLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    height: 1px;
+}

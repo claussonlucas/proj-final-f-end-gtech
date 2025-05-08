@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import Logo from "./Logo";
 import imgCar from "../assets/mini-cart.svg";
 import "../styles/Header.css";
+import logoHeader from "../assets/logo-header.svg"
 
 // estilos para ajustar componentes (talvez CSS)
 /* component campo de busca */
@@ -16,7 +17,7 @@ const Header = () => {
     return (
         <>
             <div className="header">
-                <Logo />
+                <Logo image={logoHeader}/>
 
                 <IconField
                     iconPosition="right"
@@ -29,7 +30,7 @@ const Header = () => {
                 </IconField>
 
                 <div className="botesConta">
-                    <div id="btCadastre"><Link to={"/"}>Cadastre-se</Link></div>
+                    <div id="btCadastre"><Link to={"/form"}>Cadastre-se</Link></div>
                     <div id="btEntrar"><Link to={"/"}>Entrar</Link></div>
                 </div>
                 <div className="divCarrinho"><img src={imgCar} alt="Imagem Carrinho de Compras" /></div>
