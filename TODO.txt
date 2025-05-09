@@ -6,9 +6,12 @@
 - trocar título html
 - colocar favicon
 - ver como saber a fonte de texto usada
-- como colocar linha no menu da página atual
-- distância entre menu e linha
 - distância entre parte de cima do header e menu
+- estilo da página notfound
+- colocar c comercial
+
+- criar e estilo da página cadastre
+- criar e estilo da página entrar
 
 > FEITO
 - zerar estilos index.html
@@ -18,3 +21,5 @@
 - App.css (apagar ou editar)
 - ver como criar var para cores
 - editar tamanho da imagem do carrinho (header)
+- como colocar linha no menu da página atual
+- distância entre menu e linha

@@ -1,11 +1,10 @@
 // Logo.jsx
-import logoHeader from "../assets/logo-header.svg"
 
-const Logo = () => {
+const Logo = (props) => {
     return (
         <>
             <img
-                src={logoHeader}
+                src={props.image}
                 alt="Logo Digital Store"
                 style={{width:"253px", heigth:"44px"}} />
         </>
