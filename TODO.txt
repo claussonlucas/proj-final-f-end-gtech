@@ -8,7 +8,7 @@
 - ver como saber a fonte de texto usada
 - distância entre parte de cima do header e menu
 - estilo da página notfound
-- colocar c comercial
+- colocar c
 
 - criar e estilo da página cadastre
 - criar e estilo da página entrar

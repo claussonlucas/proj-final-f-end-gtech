@@ -7,37 +7,50 @@ footer {
     align-items: center;
     background-color: var(--dark-gray);
     color: var(--white);
-    
+    padding: 0;
 }
 
-.containerFooter {
-    width: 85%;
-    /*
+/* .containerFooter {
+    width: 100%;
+    padding: 60px 0 0 0;
     background-color: blue;
-    padding: 40px ; */
-}
+} */
 
 .container {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 50px;
-
+    background-color: rgb(166, 255, 0);
 }
 .divMain {
-    
-     /* background-color: aquamarine;apagar */
-}
-
-.divInfo {
-    background-color: bisque;
-    
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-flow: column;
+    gap: 25px;
+    background-color: aquamarine;
 }
 
 .logosSocial {
     display: flex;
     flex-flow: row nowrap;
     gap: 35px;
+}
+
+.divInfo {
+    background-color: bisque;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0px;
+}
+
+.twoInfo {
+    background-color: blueviolet;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0px;
 }
 
 .finalLine {
