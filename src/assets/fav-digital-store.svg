@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-104,-264)">
+    <rect
+       style="fill:#c92071;fill-opacity:1;stroke:none;stroke-width:2"
+       id="rect2-8-1-7-2-88"
+       width="32"
+       height="32"
+       x="104"
+       y="264"
+       ry="3.9521079" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.74179"
+       x="131.97279"
+       y="254.64182"
+       id="text5-3-2"
+       transform="scale(0.87089413,1.1482452)"><tspan
+         x="131.97279"
+         y="254.64182"
+         style="font-size:32px;text-align:center;text-anchor:middle;stroke-width:1.74179"
+         id="tspan6-2-4">&gt;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;white-space:pre;inline-size:0;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2"
+       x="165.73349"
+       y="233.42224"
+       id="text7-2-5"
+       transform="translate(-44.933872,60.643428)"><tspan
+         id="tspan7-1-51"
+         x="171.42294"
+         y="233.42224"
+         style="font-size:26.6667px;text-align:center;text-anchor:middle">-</tspan></text>
+  </g>
+</svg>

@@ -1,40 +1,41 @@
 // Information.jsx
 
-import { Children } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+// Estilo do componente
 const Info = styled.section`
     width: 200px;
-    display: flex;
-    flex-flow: column;
-    background-color: aqua;
-    margin-bottom: 0px;
-    padding: 30px;
-    & p {
-        margin: 10px 0;
+    //background-color: aqua;
+
+    & ul {
+        padding: 0;
+        margin-top: 25px;
+        & li {
+            list-style: none;
+            
+            margin-bottom: 25px;
+        }
+        & a {
+            color: var(--white);
+            text-decoration: none;
+        }
     }
 
 `
 
+export default function Information ({ title, objs }) {
 
-
-export default function Information ({ children }) {
+    // guarda várias linhas, cada linha com um objeto
+    const infos = objs.map(obj =>
+        <li key={obj.id}><Link to={obj.link}>{obj.text}</Link></li>
+    );
 
     return (
         <Info>
-            {children}
+            <h4>{title}</h4>
+            <ul>{infos}</ul>
 
         </Info>
     );
 }
-/*
-title={"Informação"}
-informations={"numero"}
-<h3>{props.title}</h3> props, 
-
-            {
-                props.informations.map(information => {
-                    <p>{information.text}</p>
-                })
-            }
-*/

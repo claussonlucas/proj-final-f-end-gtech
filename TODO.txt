@@ -3,8 +3,7 @@
 // Lista o que fazer
 - incluir metadata no index.html
 - zerar estilos body index.html
-- trocar título html
-- colocar favicon
+
 - ver como saber a fonte de texto usada
 - distância entre parte de cima do header e menu
 - estilo da página notfound
@@ -23,3 +22,5 @@
 - editar tamanho da imagem do carrinho (header)
 - como colocar linha no menu da página atual
 - distância entre menu e linha
+- trocar título html
+- colocar favicon
