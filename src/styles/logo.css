@@ -1,0 +1,13 @@
+.tamanho {
+    width: 253px;
+    height: 44px;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .tamanho {
+        width: 40%;
+        height: 40%;
+        
+    }
+}

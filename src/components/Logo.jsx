@@ -1,4 +1,7 @@
 // Logo.jsx
+import "../styles/logo.css";
+
+/* style={{width:"253px", height:"44px"}} */
 
 const Logo = (props) => {
     return (
@@ -6,7 +9,8 @@ const Logo = (props) => {
             <img
                 src={props.image}
                 alt="Logo Digital Store"
-                style={{width:"253px", heigth:"44px"}} />
+                className="tamanho"
+                />
         </>
     )
 }
