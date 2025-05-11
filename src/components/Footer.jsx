@@ -9,11 +9,12 @@ import imgTwitter from "../assets/twitter.svg";
 import "../styles/footer.css";
 import Information from "./Information";
 import Logo from "./Logo";
-// objetos
+// Objetos do DataComponents
 import { objOne, objThree, objTwo, titleOne, titleThree, titleTwo } from "../data/DataFooter";
 
 export default function Footer () {
 
+    
     return (
         <footer>
             <div className="divMainAndInfo">
@@ -30,10 +31,10 @@ export default function Footer () {
                 </div>
                 
                 <div className="twoInfo">
-                    <Information title={titleOne} objs={objOne} />
-                    <Information title={titleTwo} objs={objTwo} />
+                    <Information title={titleOne} informations={objOne} />
+                    <Information title={titleTwo} informations={objTwo} />
                 </div>
-                <Information title={titleThree} objs={objThree} />
+                <Information title={titleThree} informations={objThree} />
             </div>
             <hr />
 

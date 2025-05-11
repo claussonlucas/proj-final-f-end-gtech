@@ -3,7 +3,7 @@
 
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import imgNotFound from "../assets/img-not-found-v1.svg";
+import imgNotFound from "../assets/img-not-found.svg";
 
 const Not = styled.section `
     width: 100%;

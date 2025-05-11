@@ -1,3 +1,5 @@
+/* Objetos usados no Footer */
+
 // Dados apresentados no Footer.jsx
 // Lista 1
 export const titleOne = "Informação";

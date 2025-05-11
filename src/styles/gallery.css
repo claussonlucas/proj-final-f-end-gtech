@@ -1,0 +1,68 @@
+/* gallery.css */
+
+.container {
+    /* width: 1200px; */
+    background-color: bisque;
+
+}
+
+/* estilo da div da imagem grande */
+.galleryOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: beige;
+
+}
+
+
+/* estilos seta direita */
+.arrowRight {
+    position: absolute;
+    top: 340px;
+    right: 50px;
+}
+
+.arrowRight > img {
+    cursor: pointer;
+}
+
+/* estilos seta esquerda */
+.arrowLeft {
+    position: absolute;
+    top: 340px;
+    left: 50px;
+}
+
+.arrowLeft > img {
+    cursor: pointer;
+}
+
+/* estilo div miniatura */
+.divMiniatura {
+    padding: 50px 0;
+    background-color: blueviolet;
+}
+
+.divMiniatura > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divMiniatura > ul > li > img {
+    padding: 0;
+    margin: 0;
+}
+.divMiniatura > ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    
+}
+
+.divMiniatura > ul > li {
+    list-style: none;
+}

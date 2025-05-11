@@ -24,10 +24,10 @@ const Info = styled.section`
 
 `
 
-export default function Information ({ title, objs }) {
+export default function Information ({ title, informations }) {
 
     // guarda várias linhas, cada linha com um objeto
-    const infos = objs.map(obj =>
+    const infos = informations.map(obj =>
         <li key={obj.id}><Link to={obj.link}>{obj.text}</Link></li>
     );
 
