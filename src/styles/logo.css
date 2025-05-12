@@ -4,10 +4,9 @@
     
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .tamanho {
-        width: 40%;
-        height: 40%;
-        
+        width: 30%;
+        height: 30%;
     }
 }

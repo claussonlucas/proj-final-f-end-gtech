@@ -36,12 +36,16 @@ const Menus = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 1200px) {
+        .menuBar {display: none;}
+    }
 `;
 
 export default function MenuBar() {
     return (
         <Menus>
-            <nav>
+            <nav className="menuBar">
                 <ul>
                     <li><NavLink to={"/"} className="linkHome">Home</NavLink></li>
                     <li><NavLink to={"/produtos"} className="linkProdutos">Produtos</NavLink></li>
