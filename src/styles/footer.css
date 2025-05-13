@@ -9,6 +9,7 @@ footer {
     color: var(--white);
 }
 
+/* div que envolve a divMain e a divInfo */
 .divMainAndInfo {
     width: 85%;
     display: flex;
@@ -17,6 +18,8 @@ footer {
     /* background-color: blue; */
 }
 
+/* div que envolve o componente Logo.jsx,
+<p>,  e redes sociais */
 .divMain {
     width: 400px;
     height: 250px;

@@ -9,11 +9,10 @@ import imgTwitter from "../assets/twitter.svg";
 import "../styles/footer.css";
 import Information from "./Information";
 import Logo from "./Logo";
-// Objetos do DataComponents
+// Objetos do DataFooter
 import { objOne, objThree, objTwo, titleOne, titleThree, titleTwo } from "../data/DataFooter";
 
 export default function Footer () {
-
     
     return (
         <footer>

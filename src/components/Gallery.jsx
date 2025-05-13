@@ -11,18 +11,22 @@ images}) {
     /* Guarda o id da miniatura clicada */
     //const [idMiniatura, setIdMiniatura] = useState(0);
 
+    // quando clicado a seta direita, avança 1 imagem da lista
+    // de objetos
     function handleClickRight() {
         setVariavel(variavel + 1);
     }
 
+    // quando clicado a seta esquerda, retorna 1 imagem da lista
+    // de objetos
     function handleClickLeft() {
         setVariavel(variavel - 1);
     }
 
     // altera imagem grande para ser a igual a miniatura clicada
-    /* function handleClickThumb(p) {
-        setVariavel(p);
-    } */
+    function handleClickThumb() {
+        setVariavel(3);
+    }
 
     // código para mostrar thumbnail
     const miniatura = images.map(thumbnail =>
@@ -34,7 +38,7 @@ images}) {
                     borderRadius: radius}}/>
             </div>
         </li>
-    );
+        );
     
     // image recebe o elemento da lista usando
     // como index a variavel
@@ -66,14 +70,19 @@ images}) {
                 </div>
             }
 
-            <div >
+            <div onClick={handleClickThumb}>
                 <img
-                    src={image.src} alt={`home-slide-${image.id + 1}`}
+                    src={images[0].src} alt={`home-slide-${image.id + 1}`}
                     style={{width:"117px", height: "95px",
                     borderRadius: radius}}/>
             </div>
 
-            
+            <div onClick={handleClickThumb}>
+                <img
+                    src={images[1].src} alt={`home-slide-${image.id + 1}`}
+                    style={{width:"117px", height: "95px",
+                    borderRadius: radius}}/>
+            </div>
         </div>
     );
 }
