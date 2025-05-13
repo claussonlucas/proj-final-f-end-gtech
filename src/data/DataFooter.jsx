@@ -2,7 +2,8 @@
 
 // Dados apresentados no Footer.jsx
 // Lista 1
-export const titleOne = "Informação";
+export const titleOne = "Informação"; // título
+// objeto
 export const objOne = [
     {
         id: 0,
@@ -37,7 +38,8 @@ export const objOne = [
 ];
 
 // Lista 2
-export const titleTwo = "Categorias";
+export const titleTwo = "Categorias"; // título
+// objeto
 export const objTwo = [
     {
         id: 0,
@@ -67,7 +69,8 @@ export const objTwo = [
 ];
 
 // Lista 3
-export const titleThree = "Contato";
+export const titleThree = "Contato"; // título
+// objeto
 export const objThree = [
     {
         id: 0,
