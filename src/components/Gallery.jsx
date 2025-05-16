@@ -24,12 +24,12 @@ images}) {
     }
 
     // altera imagem grande para ser a igual a miniatura clicada
-    function handleClickThumb() {
-        setVariavel(3);
+    function handleClickThumb(id) {
+        setVariavel(id);
     }
 
     // código para mostrar thumbnail
-    const miniatura = images.map(thumbnail =>
+    /* const miniatura = images.map(thumbnail =>
         <li key={thumbnail.id}>
             <div >
                 <img
@@ -38,19 +38,42 @@ images}) {
                     borderRadius: radius}}/>
             </div>
         </li>
-        );
+        ); */
     
+    // função que mostra as miniaturas
+    /* function Thumbnail({ id, thumb }) {
+            //console.log("Gallery: thumb: " + thumb);
+            //console.log("Gallery: thumb[0]: " + thumb[0]);
+            //console.log("Gallery: thumb[0].src: " + thumb[0].src);
+        return (
+            <>
+                
+                
+                <img
+                    scr={thumb[id].src}
+                    width="117px"
+                    height="95px"
+                    onClick={() => setVariavel(id)}/>
+            </>
+        );
+    } */
+
+    
+    //console.log("Gallery: images: " + image);
+    //console.log("Gallery: images[variavel]: " + images[variavel]);
+    //console.log("Gallery: images[variavel].src: " + images[variavel].src);
     // image recebe o elemento da lista usando
     // como index a variavel
     let image = images[variavel];
-
+    console.log("Gallery: images: " + image); // apagar
+    
     return (
         <div className="container">
             <div className="galleryOne">
                 <img src={image.src} alt={"Imagem Galeria"}
                     style={{width: width + "px", height: height + "px", borderRadius: radius}}/>
                 
-                {variavel < 7 &&
+                {variavel < (images.length - 1) &&
                     <div className="arrowRight" onClick={handleClickRight} >
                         <img src={arrowRight} alt="Seta Direita"/>
                     </div>
@@ -64,25 +87,23 @@ images}) {
                 }
             </div>
 
-            {showThumbs &&
+            {/* {showThumbs &&
                 <div className="divMiniatura">
                     <ul>{miniatura}</ul>
                 </div>
-            }
+            } */}
 
-            <div onClick={handleClickThumb}>
-                <img
-                    src={images[0].src} alt={`home-slide-${image.id + 1}`}
-                    style={{width:"117px", height: "95px",
-                    borderRadius: radius}}/>
-            </div>
-
-            <div onClick={handleClickThumb}>
+            {/* <div onClick={handleClickThumb}>
                 <img
                     src={images[1].src} alt={`home-slide-${image.id + 1}`}
                     style={{width:"117px", height: "95px",
                     borderRadius: radius}}/>
             </div>
+
+            <div>
+                
+                <Thumbnail id={5} thumb={images}/>
+            </div> */}
         </div>
     );
 }
