@@ -1,0 +1,9 @@
+/* homePage.css */
+
+.divConteudo {
+    
+    display: flex;
+    flex-flow: column;
+    
+    background-color: black;
+}

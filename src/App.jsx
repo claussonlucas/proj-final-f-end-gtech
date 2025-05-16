@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Home from './components/Home'
+
 
 /*
 primereact/resources/themes/bootstrap4-light-purple/theme.css
@@ -12,6 +12,7 @@ import "primeflex/primeflex.css";
 import "primeicons/primeicons.css";
 import Produtos from './components/Produtos';
 import NotFound from './components/NotFound';
+import HomePage from './components/HomePage';
 
 function App() {
   
@@ -19,7 +20,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}/>
+          <Route path="/" element={<HomePage />}/>
           <Route path="/produtos" element={<Produtos />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

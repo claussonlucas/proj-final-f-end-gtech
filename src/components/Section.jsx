@@ -9,6 +9,9 @@ const Container = styled.section `
     display: flex;
     flex-direction: column;
     position: relative;
+    background-color: beige;
+
+    //padding: 0 30px 0 30px;
 
     & .divTitle {
         display: flex;
@@ -30,23 +33,26 @@ const Container = styled.section `
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 20px;
     }
 `
 export default function Section ({ title, titleAlign="flex-start", link, children}) {
 
     return (
         <Container>
+            {/* Título da Section */}
             <div
                 className="divTitle"
                 style={{justifyContent: titleAlign}}>
                 <h3>{title}</h3>
             </div>
             
+            {/* Link da Section */}
             <div className="divLink">
                 <h4><Link to={link.href}>{link.text}</Link></h4>
             </div>
 
-            
+            {/* Children */}
             <div className="divChildren">
                 {children}
             </div>

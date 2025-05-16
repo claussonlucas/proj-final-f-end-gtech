@@ -2,15 +2,17 @@ import styled from "styled-components";
 import ProductCard from "./ProductCard";
 
 const DivList = styled.section `
-    /* background-color: aqua; */
+    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
     
-    padding: 80px 0px 50px 50px;
+    padding: 20px 0px 50px 0px;
 
     & ul {
         display: flex;
+        justify-content: center;
+    align-items: center;
         flex-flow: row wrap;
         gap: 20px;
         margin: 0;
