@@ -1,0 +1,11 @@
+
+.inputs {
+    width: 22px;
+    height: 22px;
+    background-color: var(--primary);
+}
+
+.titleFilter {
+    color: var(--dark-gray-2);
+    font-size: 14px;
+}

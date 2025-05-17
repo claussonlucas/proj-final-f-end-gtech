@@ -37,7 +37,7 @@ const HomePage = () => {
                 {/* Div conteúdo da Home Page */}
                 <div className="divConteudo">
                     {/* Coleções em Destaque - Pedido para ser no centro */}
-                    <Section title={"Coleções em Destaque"} titleAlign={"center"} link={objLink}>
+                    <Section title={"Coleções em Destaque"} titleAlign={"center"} link={""}>
                         <img src={img1} alt="Imagem Blusa Supreme" style={{borderRadius: '4px'}} />
                         <img src={img2} alt="Imagem Tênis Adidas" style={{borderRadius: '4px'}}/>
                         <img src={img3} alt="Imagem Fone de Ouvido" style={{borderRadius: '4px'}}/>

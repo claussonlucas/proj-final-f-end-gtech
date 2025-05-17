@@ -10,9 +10,11 @@ primereact/resources/themes/saga-purple/theme.css #
 import "primereact/resources/themes/bootstrap4-light-purple/theme.css";
 import "primeflex/primeflex.css";
 import "primeicons/primeicons.css";
-import Produtos from './components/Produtos';
 import NotFound from './components/NotFound';
 import HomePage from './components/HomePage';
+
+import ProductViewPage from './pages/ProductViewPage';
+import ProductListingPage from './pages/ProductListingPage';
 
 function App() {
   
@@ -21,7 +23,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />}/>
-          <Route path="/produtos" element={<Produtos />} />
+          <Route path="/produtos" element={<ProductListingPage />} />
+          <Route path="/produtos" element={<ProductListingPage />} />
+          <Route path="/product/:id" element={<ProductViewPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
