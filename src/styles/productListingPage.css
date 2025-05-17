@@ -1,0 +1,37 @@
+.divContainer {
+    display: flex;
+}
+
+/* estilos Ordenar por */
+.divOrder {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: aqua;
+}
+
+.titleOrder, .order {
+    color: var(--dark-gray-2);
+    font-size: 16px;
+}
+
+.order {
+    width: 308px;
+    height: 60px;
+}
+
+/* estilo filtro */
+.divfilter {
+    width: 308px;
+    background-color: bisque;
+    /* background-color: var(--white); */
+}
+
+.labelFilter {
+    color: var(--dark-gray-2);
+    font-size: 16px;
+}
+
+.linefilter {
+    border: 1px solid var(--light-gray-2);
+}

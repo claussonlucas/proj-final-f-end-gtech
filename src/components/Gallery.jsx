@@ -69,9 +69,9 @@ images}) {
     
     return (
         <div className="container">
-            <div className="galleryOne">
+            <div className="galleryOne" style={{width: width + "px", height: height + "px"}}>
                 <img src={image.src} alt={"Imagem Galeria"}
-                    style={{width: width + "px", height: height + "px", borderRadius: radius}}/>
+                    style={{borderRadius: radius}}/>
                 
                 {variavel < (images.length - 1) &&
                     <div className="arrowRight" onClick={handleClickRight} >
