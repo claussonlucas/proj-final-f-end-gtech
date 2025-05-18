@@ -68,23 +68,27 @@ images}) {
     console.log("Gallery: images: " + image); // apagar
     
     return (
-        <div className="container">
-            <div className="galleryOne" style={{width: width + "px", height: height + "px"}}>
-                <img src={image.src} alt={"Imagem Galeria"}
-                    style={{borderRadius: radius}}/>
+        <div className="containerGallery">
+            <div className="galleryOne">
+                <img src={image.src} alt={"Imagem Galeria"} className="imgGallery"
+                    style={{width: width + "px", height: height + "px", borderRadius: radius}}/>
                 
+                
+                {variavel > 0 &&
+                    <div className="arrowLeft" onClick={handleClickLeft}
+                    style={{top: "height px"}}>
+                        <img src={arrowLeft} alt="Seta Esquerda"/>
+                    </div>
+                }
+
                 {variavel < (images.length - 1) &&
-                    <div className="arrowRight" onClick={handleClickRight} >
+                    <div className="arrowRight" onClick={handleClickRight}
+                    style={{top: "height px"}}>
                         <img src={arrowRight} alt="Seta Direita"/>
                     </div>
                 }
-
-                {variavel > 0 &&
-                    <div className="arrowLeft" onClick={handleClickLeft}>
-                        <img src={arrowLeft} alt="Seta Esquerda"/>
-                    </div>
-
-                }
+            
+                
             </div>
 
             {/* {showThumbs &&

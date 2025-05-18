@@ -4,6 +4,13 @@
 - incluir metadata no index.html
 - zerar estilos body index.html
 
+- TIRAR STYLE COMPONENTS
+- BuyBox: página para o botão comprar
+- BUYBOX: cor estrela
+- ProductOptions: selecionar e mudar cor do item
+- GALLERY: alinhamento setas
+- Decidir onde fica o H1
+
 - ver como saber a fonte de texto usada
 - distância entre parte de cima do header e menu
 - estilo da página notfound

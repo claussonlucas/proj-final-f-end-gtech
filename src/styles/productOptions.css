@@ -1,0 +1,36 @@
+.listaItens {
+    display: flex;
+    gap: 20px;
+    /* background-color: bisque; */
+    padding: 0;
+    margin: 0;
+}
+
+.square, .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--light-gray-2);
+    font-size: 24px;
+    color: var(--dark-gray-2);
+}
+
+.square {
+    width: 46px; /* pediu auto, não ficou bom */
+    height: 46px;
+    list-style: none;
+}
+
+.circle {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    
+}
+
+.titulo {
+    font-size: 15px;
+    color: var(--dark-gray-2);
+    padding: 15px 0;
+    margin: 0;
+}

@@ -1,5 +1,5 @@
 /* Filter one */
-export const titleFilterOne = "Título 1";
+export const titleFilterOne = "Marca";
 export const optionsFilterOne = [
     {id: 0, "text": "Options 1", "value": "opt1"},
     {id: 1, "text": "Options 2"},
@@ -8,7 +8,7 @@ export const optionsFilterOne = [
 ]
 
 /* Filter two */
-export const titleFilterTwo = "Título 2";
+export const titleFilterTwo = "Categoria";
 export const optionsFilterTwo = [
     {id: 0, "text": "Options 1", "value": "opt1"},
     {id: 1, "text": "Options 2"},
@@ -17,7 +17,7 @@ export const optionsFilterTwo = [
 ]
 
 /* Filter three */
-export const titleFilterThree = "Título 3";
+export const titleFilterThree = "Gênero";
 export const optionsFilterThree = [
     {id: 0, "text": "Options 1", "value": "opt1"},
     {id: 1, "text": "Options 2"},

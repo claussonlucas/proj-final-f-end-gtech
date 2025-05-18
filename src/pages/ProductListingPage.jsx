@@ -23,13 +23,13 @@ export default function ProductListingPage() {
         <>
             <Layout>
                 {/* div geral */}
-                <div className="divContainer">
+                <div className="divProductListPage">
                     {/* div lateral */}
-                    <div>
+                    <div className="divLateral">
                         {/* div ordenar */}
                         <div className="divOrder">
-                            <label className={"titleOrder"} htmlFor="price">Ordenar por:</label>
-                            <select className={"order"} id="price" name="price">
+                            <label className="titleOrder" htmlFor="price">Ordenar por:</label>
+                            <select className="order" id="price" name="price">
                                 <option value="menor">Menor preço</option>
                                 <option value="maior">Maior preço</option>
                             </select>
@@ -65,6 +65,7 @@ export default function ProductListingPage() {
                             <ProductListing products={ListaProdutos}/>
                         </Section>
                     </div>
+                    
                 </div>
 
             </Layout>
@@ -74,4 +75,7 @@ export default function ProductListingPage() {
 
 /* 
 inputType={"checkout"} options={"objto"} 
+
+
+
 */

@@ -9,7 +9,6 @@ const Layout = ({ children }) => {
     return (
         <>
             <Header />
-            <Teste />
             { children }
             <Footer />
         </>
@@ -17,3 +16,9 @@ const Layout = ({ children }) => {
 }
 
 export default Layout;
+
+/*
+
+<Teste />
+
+*/

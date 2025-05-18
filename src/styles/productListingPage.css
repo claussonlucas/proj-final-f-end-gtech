@@ -1,5 +1,13 @@
-.divContainer {
+.divProductListPage {
     display: flex;
+    flex-flow: row;
+    background-color: var(--light-gray-3);
+    padding: 10px 35px;
+}
+
+.divLateral {
+    /* background-color: rgb(255, 217, 0); */
+    padding: 55px 0 0 0px;
 }
 
 /* estilos Ordenar por */
@@ -7,7 +15,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: aqua;
+    /* background-color: aqua; */
+    padding-bottom: 15px;
 }
 
 .titleOrder, .order {
@@ -18,20 +27,33 @@
 .order {
     width: 308px;
     height: 60px;
+    border: none;
+    outline: none;
+}
+
+.order:focus {
+    border: 2px solid var(--primary);
+}
+
+.order > option:hover {
+    accent-color: var(--primary);
 }
 
 /* estilo filtro */
 .divfilter {
     width: 308px;
-    background-color: bisque;
-    /* background-color: var(--white); */
+    
+    background-color: var(--white);
+    padding: 30px 20px;
 }
 
 .labelFilter {
     color: var(--dark-gray-2);
     font-size: 16px;
+    
 }
 
 .linefilter {
     border: 1px solid var(--light-gray-2);
+    margin: 20px 0;
 }

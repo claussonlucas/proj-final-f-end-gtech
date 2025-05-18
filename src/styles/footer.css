@@ -11,10 +11,12 @@ footer {
 
 /* div que envolve a divMain e a divInfo */
 .divMainAndInfo {
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-flow: row wrap;
-    padding: 60px 0 10px 0;
+    
+    padding: 80px 0 30px 0;
+    
     /* background-color: blue; */
 }
 
@@ -28,7 +30,7 @@ footer {
     gap: 25px;
     padding-right: 60px;
     margin-right: 110px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     /* background-color: aquamarine; */
 }
 
@@ -43,6 +45,7 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     gap: 0px;
+    margin-bottom: 30px;
     /* background-color: blueviolet; */
 }
 
@@ -52,7 +55,11 @@ footer {
     align-items: center;
 }
 
-hr {
-    width: 85%;
+.hrFooter {
+    width: 90%;
     height: 1px;
+}
+
+.h5Footer {
+    padding: 30px 0;
 }

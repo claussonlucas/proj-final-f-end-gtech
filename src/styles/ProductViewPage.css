@@ -1,0 +1,6 @@
+.divGalleryBuyBox {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 35px;
+    padding: 50px 30px;
+}
