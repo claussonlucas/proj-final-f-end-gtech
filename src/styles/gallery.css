@@ -1,8 +1,10 @@
 /* gallery.css */
 
-.container {
+.containerGallery {
     /* width: 1200px; */
-    background-color: bisque;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -13,16 +15,25 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: beige;
+    /* background-color: beige; */
 
 }
 
+/* .arrowsGallery {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0 20px;
+} */
 
 /* estilos seta direita */
 .arrowRight {
     position: absolute;
-    top: 340px;
+    /* top: 340px; */
     right: 50px;
+    
 }
 
 .arrowRight > img {
@@ -32,7 +43,7 @@
 /* estilos seta esquerda */
 .arrowLeft {
     position: absolute;
-    top: 340px;
+    /* top: 340px; */
     left: 50px;
 }
 

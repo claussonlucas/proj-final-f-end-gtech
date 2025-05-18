@@ -6,13 +6,13 @@ Exemplo de como chamar:
 <ProductCard image={imgteste} name={"Sapato"} price={"20.00"}/>
 */
 
-import styled from "styled-components";
+//import styled from "styled-components";
+import "../styles/productCard.css";
 
 // componente para produtos
 export default function ProductCard ({image, name, price, priceDiscount=""}) {
-const Container = styled.section `
-    /* background-color: var(--white); */
-    /* padding: 10px; */
+/* const Container = styled.section `
+    
     & h3 {
             padding: 5px;
             margin: 0;
@@ -32,12 +32,12 @@ const Container = styled.section `
             padding: 0;
             margin: 0;
         }
-    }
-`
+    }` */
+
     return (
-        <Container>
+        <div className="divProductCard">
             <img src={image} alt={name} style={{width: "292px", height: "321px"}}/>
-            <h3>{name}</h3>
+            <h3 className="h3ProductCard">{name}</h3>
 
             <div className="prices">
                 
@@ -47,6 +47,6 @@ const Container = styled.section `
                 <h4 className="priceDiscount">{priceDiscount}</h4>
             </div>
             
-        </Container>
+        </div>
     );
 }

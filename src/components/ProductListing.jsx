@@ -1,7 +1,8 @@
-import styled from "styled-components";
+//import styled from "styled-components";
+import "../styles/productListing.css";
 import ProductCard from "./ProductCard";
 
-const DivList = styled.section `
+/* const DivList = styled.section `
     background-color: aqua;
     display: flex;
     justify-content: center;
@@ -23,11 +24,11 @@ const DivList = styled.section `
         margin: 0;
         padding: 0;
     }
-`
+` */
 
 export default function ProductListing ({ products }) {
     const lista = products.map(product =>
-        <li key={product.id}>
+        <li key={product.id} className="liProductList">
             <ProductCard
                 image={product.image}
                 name={product.name}
@@ -37,8 +38,8 @@ export default function ProductListing ({ products }) {
     );
 
     return (
-        <DivList>
-            <ul>{lista}</ul>
-        </DivList>
+        <div className="divProductListing">
+            <ul className="ulProductList">{lista}</ul>
+        </div>
     );
 }

@@ -7,7 +7,6 @@ import Layout from "../pages/Layout";
 import Section from "./Section";
 
 // Objetos do DataSection
-import { objLink } from "../data/DataSection";
 // Objetos do DataProductListing
 import { ListaProdutos } from "../data/DataProductListing";
 // Objetos do DataGallery
@@ -16,9 +15,10 @@ import { sourcesGallery } from "../data/DataGallery";
 import Gallery from "./Gallery";
 import ProductListing from "./ProductListing";
 // Imagens da section abaixo da Gallery
-import img1 from "../../public/collection-1.png"
-import img2 from "../../public/collection-2.png"
-import img3 from "../../public/collection-3.png"
+import img1 from "../../public/collection-1.png";
+import img2 from "../../public/collection-2.png";
+import img3 from "../../public/collection-3.png";
+
 
 const HomePage = () => {
 

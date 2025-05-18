@@ -5,5 +5,5 @@
     display: flex;
     flex-flow: column;
     
-    background-color: black;
+    background-color: var(--light-gray-3);
 }

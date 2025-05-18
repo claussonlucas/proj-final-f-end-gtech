@@ -35,9 +35,9 @@ export default function Footer () {
                 </div>
                 <Information title={titleThree} informations={objThree} />
             </div>
-            <hr />
+            <hr className="hrFooter"/>
 
-            <div className="finalLine"><h5>@ 2025 Digital College</h5></div>
+            <div className="finalLine"><h5 className="h5Footer">@ 2025 Digital College</h5></div>
         </footer>
     );
 }

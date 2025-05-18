@@ -5,11 +5,13 @@ import styled from "styled-components";
 
 
 const Container = styled.section `
-    width: 100%;
+    
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: beige;
+    /* background-color: beige; */
+    padding: 25px 20px;
+    
 
     //padding: 0 30px 0 30px;
 
@@ -20,8 +22,9 @@ const Container = styled.section `
     }
     & .divLink {
         position: absolute;
-        top: 10px;
+        top: 40px;
         right: 30px;
+        
         & a {
             text-decoration: none;
             color: var(--primary);
@@ -31,9 +34,10 @@ const Container = styled.section `
 
     & .divChildren {
         display: flex;
+        flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
     }
 `
 export default function Section ({ title, titleAlign="flex-start", link, children}) {

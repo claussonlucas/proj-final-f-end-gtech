@@ -1,0 +1,83 @@
+.divBuyBox {
+    width: 400px;
+    display: flex;
+    flex-flow: column;
+}
+
+.divBuyBox > h4, h5 {
+    padding: 0;
+    margin: 0;
+}
+
+.nomeProduto, .price, .priceDiscount {
+    color: var(--dark-gray-2);
+    font-size: 32px;
+    padding: 5px 0;
+}
+
+.ref {
+    color: var(--dark-gray-3);
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.divStarRating {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 5px 0;
+}
+
+.divStars {
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--warning);
+    border-radius: 4px;
+}
+
+.stars, .description {
+    color: var(--dark-gray-2);
+    font-size: 14px;
+}
+
+.imgStar {
+    
+    fill: var(--primary);
+}
+
+.rating {
+    color: var(--light-gray);
+    font-size: 14px;
+}
+
+.prices {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.divProductOptions {
+    margin: 10px 0;
+}
+
+.btComprar {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--warning);
+    color: var(--white);
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 25px 0;
+}
+
+
