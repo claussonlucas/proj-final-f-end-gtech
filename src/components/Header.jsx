@@ -1,32 +1,31 @@
 // Header.jsx
-import { Link, NavLink } from "react-router-dom";
-import Logo from "./Logo";
-import imgCar from "../assets/mini-cart.svg";
-import logoHeader from "../assets/logo-header.svg"
 
 import "../styles/Header.css";
 
-/* usando o tema lara-light-indigo (App) */
-
-import MenuBar from "./MenuBar";
-import BarSearch from "./barSearch";
-import Lupa from "./Lupa";
-import BotoesConta from "./BotoesConta";
+import HeaderFull from "./HeaderFull";
+import HeaderReduzido from "./HeaderReduzido";
+import { useState } from "react";
 
 const Header = () => {
+    // InnerWidth: Retorna o tamanho atual da tela
+    const [estado, setEstado] = useState(innerWidth);
+        
+    // Monitora se o tamanho da tela mudou
+    window.addEventListener("resize", () => {
+    // Altera o estado caso o tamanho mude
+    setEstado(innerWidth);
+    });
+
     return (
         <>
-            <div className="header">
-                <Logo image={logoHeader}/>
-
-                <BarSearch />
-                <Lupa />
-
-                <BotoesConta />
-                <div className="divCarrinho"><img src={imgCar} alt="Imagem Carrinho de Compras" /></div>
-            </div>
-
-            <MenuBar />
+            {/* <h1>HEADER</h1> */}
+            {/* Teste de qual compon. renderizar */}
+            {
+                estado > 1000 ?
+                <HeaderFull />
+                :
+                <HeaderReduzido />
+            }
         </>
     );
 }

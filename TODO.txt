@@ -7,13 +7,16 @@
 - TIRAR STYLE COMPONENTS
 - BuyBox: página para o botão comprar
 - BUYBOX: cor estrela
+
 - ProductOptions: selecionar e mudar cor do item
-- GALLERY: alinhamento setas
+- PRODUCTOPTIONS: corrigir se square usar radius e circulo não usar
+
+
 - Decidir onde fica o H1
 
 - ver como saber a fonte de texto usada
 - distância entre parte de cima do header e menu
-- estilo da página notfound
+
 - colocar c
 
 - criar e estilo da página cadastre
@@ -31,3 +34,5 @@
 - distância entre menu e linha
 - trocar título html
 - colocar favicon
+- GALLERY: alinhamento setas
+- estilo da página notfound

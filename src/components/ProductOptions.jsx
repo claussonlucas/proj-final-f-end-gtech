@@ -21,7 +21,10 @@ export default function ProductOptions ({ options, radius, shape, type }) {
 
     return (
         <>
+            {/* Título */}
             <h5 className="titulo">{type === "text" ? "Tamanho" : "Cor" }</h5>
+            
+            {/* Mostra lista ul feita com o map */}
             <ul className="listaItens">{lista}</ul>
         </>
     );

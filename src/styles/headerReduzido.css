@@ -1,0 +1,32 @@
+/* Div geral */
+.mainHeaderRed {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 30px 0;
+}
+
+/* alinhamento itens, exceto barra pesq. */
+.divHeaderRed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Três barras */
+.divHeaderRedBarras {
+    margin: 0 110px 0 0px;
+    cursor: pointer;
+}
+
+/* Lupa */
+.divHeaderRedLupa {
+    margin: 0 0 0 70px;
+    cursor: pointer;
+}
+
+/* Carrinho */
+.divHeaderRedCar {
+    margin: 0 0 0 30px;
+}

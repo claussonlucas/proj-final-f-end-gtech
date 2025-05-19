@@ -49,6 +49,7 @@ export default function ProductViewPage () {
                             shape={"circle"}
                             type={"color"}
                             />
+
                     </BuyBox>
                     
                 </div>

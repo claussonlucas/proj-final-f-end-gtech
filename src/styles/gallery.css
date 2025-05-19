@@ -4,6 +4,7 @@
     /* width: 1200px; */
     /* background-color: bisque; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
 }
@@ -76,4 +77,11 @@
 
 .divMiniatura > ul > li {
     list-style: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .imgGallery{
+        width: 500px;
+        height: 500px;
+    }
 }

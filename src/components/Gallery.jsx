@@ -24,12 +24,13 @@ images}) {
     }
 
     // altera imagem grande para ser a igual a miniatura clicada
-    function handleClickThumb(id) {
-        setVariavel(id);
+    function handleClickThumb(c) {
+        console.log(c);
+        setVariavel(c + 1);
     }
 
     // código para mostrar thumbnail
-    /* const miniatura = images.map(thumbnail =>
+    const miniatura = images.map(thumbnail =>
         <li key={thumbnail.id}>
             <div >
                 <img
@@ -38,7 +39,7 @@ images}) {
                     borderRadius: radius}}/>
             </div>
         </li>
-        ); */
+        );
     
     // função que mostra as miniaturas
     /* function Thumbnail({ id, thumb }) {
@@ -91,20 +92,20 @@ images}) {
                 
             </div>
 
-            {/* {showThumbs &&
+            {showThumbs &&
                 <div className="divMiniatura">
                     <ul>{miniatura}</ul>
                 </div>
-            } */}
+            }
 
-            {/* <div onClick={handleClickThumb}>
+            <div onClick={handleClickThumb}>
                 <img
                     src={images[1].src} alt={`home-slide-${image.id + 1}`}
                     style={{width:"117px", height: "95px",
                     borderRadius: radius}}/>
             </div>
 
-            <div>
+            {/* <div>
                 
                 <Thumbnail id={5} thumb={images}/>
             </div> */}
