@@ -1,0 +1,42 @@
+.formBarra {
+    position: relative;
+    width: 100%;
+    margin: 0 30px;
+}
+
+.searchField {
+    width: 100%;
+}
+
+.searchInput {
+    width: 500px;
+    height: 50px;
+    padding-right: 40px; /* Espaço para o botão */
+    border: transparent;
+    border-radius: 4px;
+
+}
+
+.lupaInterna {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-gray); /* Cor do ícone */
+}
+
+.search-button:hover {
+    color: var(--primary); /* Cor do ícone ao passar o mouse */
+}
+
+::placeholder {
+    color: var(--light-gray); /* Vermelho */
+    opacity: 1; /* Garante que não fique semi-transparente em alguns navegadores */
+}

@@ -29,6 +29,7 @@ const HomePage = () => {
                 
                 {/* Componente Gallery - width: 1351 (ajustado para monitor HD) */}
                 <Gallery
+                    className={"compGallery"}
                     width={"1351"} height={"681"}
                     radius={"4px"}
                     images={sourcesGallery}

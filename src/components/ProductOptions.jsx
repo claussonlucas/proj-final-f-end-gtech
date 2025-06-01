@@ -19,6 +19,8 @@ export default function ProductOptions ({ options, radius, shape, type }) {
             </li>
     );
 
+    
+
     return (
         <>
             {/* Título */}
