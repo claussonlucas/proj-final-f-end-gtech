@@ -3,8 +3,8 @@
 
 import "../styles/homePage.css";
 
-import Layout from "../pages/Layout";
-import Section from "./Section";
+import Section from "../components/Section";
+import Layout from "./Layout";
 
 // Objetos do DataSection
 // Objetos do DataProductListing
@@ -12,8 +12,8 @@ import { ListaProdutos } from "../data/DataProductListing";
 // Objetos do DataGallery
 import { sourcesGallery } from "../data/DataGallery";
 
-import Gallery from "./Gallery";
-import ProductListing from "./ProductListing";
+import Gallery from "../components/Gallery";
+import ProductListing from "../components/ProductListing";
 // Imagens da section abaixo da Gallery
 import img1 from "../../public/collection-1.png";
 import img2 from "../../public/collection-2.png";
@@ -29,6 +29,7 @@ const HomePage = () => {
                 
                 {/* Componente Gallery - width: 1351 (ajustado para monitor HD) */}
                 <Gallery
+                    className={"compGallery"}
                     width={"1351"} height={"681"}
                     radius={"4px"}
                     images={sourcesGallery}

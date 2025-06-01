@@ -23,13 +23,12 @@ const Not = styled.section `
         align-items: center;
         background-color: var(--light-gray-2);
         border-radius: 4px;
-
-        & a {
-            color: var(--primary);
-            font-size: 14px;
-            font-weight: bold;
-            text-decoration: none;
-        }
+        
+        color: var(--primary);
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        
     }
 
     .main {
@@ -51,10 +50,9 @@ export default function NotFound () {
 
     return (
         <Not>
-            <div className="botao">
-                <div><Link to={"/"}>Voltar</Link></div>
-            </div>
-
+            {/* Estizado como botão */}
+            <Link to={"/"} className="botao">Voltar</Link>
+            
             <div className="main">
                 <img src={imgNotFound} alt="Imagem Ilustrativa" />
                 

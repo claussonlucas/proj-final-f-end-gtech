@@ -37,6 +37,9 @@ const Menus = styled.div`
         }
     }
 
+    @media screen and (max-width: 1200px) {
+        .menuBar {display: none;}
+    }
 `;
 
 export default function MenuBar() {
