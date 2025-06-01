@@ -53,6 +53,14 @@
 
 - A segunda página mostra uma lista de produtos, com opções para filtrar (por enquanto não funcionais).
 
+- Página de Produtos - Parte 1
+  
+![produtos](./doc/produtos-p1-v0.png)
+
+- Página de Produtos - Parte 2
+  
+![produtos](./doc/produtos-p2-v0.png)
+
 </details>
 
 ### 3 - Página de um Produto Específico
@@ -61,5 +69,17 @@
   <summary><strong>Sobre</strong></summary>
 
 A terceira página contém informações de um produto específico.
+
+- Página Product - Parte 1
+  
+![produtos](./doc/product-p1-v0.png)
+
+- Página Product - Parte 2
+  
+![produtos](./doc/product-p2-v0.png)
+
+- Página Product - Parte 3
+  
+![produtos](./doc/product-p3-v0.png)
 
 </details>
