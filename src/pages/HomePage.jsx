@@ -25,7 +25,7 @@ const HomePage = () => {
     return (
         <>
             <Layout >
-                <h2>Home</h2>
+                {/* <h2>Home</h2> */}
                 
                 {/* Componente Gallery - width: 1351 (ajustado para monitor HD) */}
                 <Gallery

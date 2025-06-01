@@ -29,7 +29,21 @@
 
 - Na seção principal, mostra uma galeria de imagens de produtos, uma seção com vários produtos, e no final um rodapé (footer) com informações da loja.
 
-IMAGEM
+- Página Inicial - Parte 1
+![homepage](./doc/homepage-p1-v0.png)
+
+- Página Inicial - Parte 2
+
+![homepage](./doc/homepage-p2-v0.png)
+
+- Página Inicial - Parte 3
+
+![homepage](./doc/homepage-p3-v0.png)
+
+- Página Inicial - Parte 4
+
+![homepage](./doc/homepage-p4-v0.png)
+
 </details>
 
 ### 2 - Página da Lista de Produtos
