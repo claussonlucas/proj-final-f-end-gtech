@@ -1,12 +1,51 @@
-# React + Vite
+# PROJETO FINAL FRONT END GERAÇÃO TECH - 2025
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- O objetivo do projeto é criar um um aplicativo Web simulando uma loja virtual, para venda de produtos, como tênis de vários modelos. Utiliza a biblioteca `React`, com auxílio da ferramenta `Vite`, com a linguagem JavaScript.
 
-Currently, two official plugins are available:
+- A criação faz parte do projeto final Frontend do curso de Desenvolvedor Web Full Stack - Online - 2.0 - 2025, da Geração Tech, IEL.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- O projeto segue os requisitos do projeto `Digital Store`, da escola `Digital College`, disponibilizado no repositório do site do `GitHub`, e o modelo no site `Figma`:
 
-## Expanding the ESLint configuration
+- Link do repositório no GitHub:
+```https://github.com/digitalcollegebr/projeto-digital-store/tree/main```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Link do site Figma:
+```https://www.figma.com/design/cfb4F7ZXMFQmvmTn3PKI4z/DRIP-STORE---DIGITAL-COLLEGE?node-id=22-30```
+
+
+## Sobre o Aplicativo
+
+- O aplicativo apresenta três páginas ao cliente (usuário), sendo a primeira a página principal. A segunda, com uma lista de produtos, com opções para filtrar (por enquanto não funcionais). E a terceira, com informações de um produto específico.
+
+- As páginas possuem elementos comuns entre elas, como o cabeçalho (header) com a barra de menus, e o rodapé (footer) .
+
+### 1 - Página Principal
+
+<details>
+  <summary><strong>Sobre</strong></summary>
+
+
+- A página principal (Home Page) contém o cabeçalho (header) com a logo da loja fictícia, barra de pesquisa, botões para entrar como usuário (Login) e cadastro, e a barra de menus para as outras páginas. 
+
+- Na seção principal, mostra uma galeria de imagens de produtos, uma seção com vários produtos, e no final um rodapé (footer) com informações da loja.
+
+IMAGEM
+</details>
+
+### 2 - Página da Lista de Produtos
+
+<details>
+  <summary><strong>Sobre</strong></summary>
+
+- A segunda página mostra uma lista de produtos, com opções para filtrar (por enquanto não funcionais).
+
+</details>
+
+### 3 - Página de um Produto Específico
+
+<details>
+  <summary><strong>Sobre</strong></summary>
+
+A terceira página contém informações de um produto específico.
+
+</details>
