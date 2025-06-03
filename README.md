@@ -12,7 +12,7 @@ O projeto segue os requisitos do projeto `Digital Store`, da escola `Digital Col
 - Link do site Figma:
 ```https://www.figma.com/design/cfb4F7ZXMFQmvmTn3PKI4z/DRIP-STORE---DIGITAL-COLLEGE?node-id=22-30```
 
-### Linguagem, Ferramentas e Bibliotecas Utilizadas
+## Linguagem, Ferramentas e Bibliotecas Utilizadas
 - JavaScript
 - React
 - HTML e CSS (estilos dos componentes do React)
@@ -32,7 +32,7 @@ As páginas possuem elementos comuns entre elas, como o cabeçalho (header) com 
 <details>
   <summary><strong>Informações</strong></summary>
 
-### Estrutura de pastas
+## Estrutura de pastas
 A estrutura de pastas segue o modelo de organização recomendado pelo projeto `Digital Store`, acrescentando algumas pastas e arquivos, que são necessários para o funcionamento do aplicativo. 
 
 - Os arquivos `.gitignore`, `eslint.config.js`, `package-lock.json`, `package.json`, `vite.config.js`, são para o funcionamento do aplicativo, e instalados quando a framework `Vite` é instalado. 
@@ -126,7 +126,7 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 ```
 </details>
 
-### Páginas
+## Páginas
 
 <details>
   <summary><strong>Informações</strong></summary>
@@ -201,16 +201,16 @@ A terceira página contém informações de um produto específico.
 
 </details>
 
-### Autor
+## Autor
 
 - GitHub: claussonlucas
 
-### Contribuição
+## Contribuição
 
 Alguns trechos de códigos foram feitos em parceria com o aluno Clailson Lucas, do curso Desenvolvedor Web Full Stack - Online - 2.0 - 2025, da Geração Tech.
 - GitHub: clailson1
 
-### Licença
+## Licença
 
 O projeto segue o modelo do projeto `Digital Store`, da escola `Digital College`, disponibilizado no repositório do site do `GitHub`, e o modelo no site `Figma`:
 
