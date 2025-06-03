@@ -142,7 +142,7 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 - Na seção principal, mostra uma galeria de imagens de produtos, uma seção com vários produtos, e no final um rodapé (footer) com informações da loja.
 
 - Página Inicial - Parte 1
-- 
+ 
 ![homepage](./doc/homepage-p1-v0.png)
 
 - Página Inicial - Parte 2
@@ -208,7 +208,7 @@ A terceira página contém informações de um produto específico.
 ## Contribuição
 
 Alguns trechos de códigos foram feitos em parceria com o aluno Clailson Lucas, do curso Desenvolvedor Web Full Stack - Online - 2.0 - 2025, da Geração Tech.
-- GitHub: clailson1
+- GitHub: [@clailson1](https://github.com/clailson1)
 
 ## Licença
 
