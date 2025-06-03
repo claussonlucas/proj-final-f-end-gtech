@@ -8,19 +8,44 @@ import Layout from "./Layout";
 
 // Objetos do DataSection
 // Objetos do DataProductListing
-import { ListaProdutos } from "../data/DataProductListing";
+//import { ListaProdutos } from "../data/DataProductListing";
 // Objetos do DataGallery
-import { sourcesGallery } from "../data/DataGallery";
+//import { sourcesGallery } from "../data/DataGallery";
 
 import Gallery from "../components/Gallery";
-import ProductListing from "../components/ProductListing";
 // Imagens da section abaixo da Gallery
+import { useEffect, useState } from "react";
 import img1 from "../../public/collection-1.png";
 import img2 from "../../public/collection-2.png";
 import img3 from "../../public/collection-3.png";
 
+import axios from "axios";
+//import { API } from "../service/index";
+import ProductListing from "../components/ProductListing";
+
+//../src/data/dataProductListing.json
 
 const HomePage = () => {
+    const [galleryList, setGalleryList] = useState([]);
+    const [productsList, setProductsList] = useState([]);
+
+    async function imagesGallery() {
+        const response = await axios.get('../src/data/dataGallery.json');
+        console.log("galleryList response", response.data.data);
+        setGalleryList(response.data.data);
+
+    }
+
+    async function produtosAlta() {
+        const response = await axios.get('../src/data/dataProductListing.json');
+        console.log("produtos response", response.data.data);
+        setProductsList(response.data.data);
+    }
+
+    useEffect(() => {
+        imagesGallery();
+        produtosAlta();
+    }, []);
 
     return (
         <>
@@ -32,7 +57,7 @@ const HomePage = () => {
                     className={"compGallery"}
                     width={"1351"} height={"681"}
                     radius={"4px"}
-                    images={sourcesGallery}
+                    images={galleryList}
                     showThumbs/>
                 
                 {/* Div conteúdo da Home Page */}
@@ -46,7 +71,7 @@ const HomePage = () => {
 
                     {/* Section com a Lista de Produtos */}
                     <Section title={"Produtos em Alta"} link={""}>
-                        <ProductListing products={ListaProdutos} />
+                        <ProductListing products={productsList} />
                     </Section>
                 </div>
                 

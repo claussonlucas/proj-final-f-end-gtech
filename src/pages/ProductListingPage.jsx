@@ -11,14 +11,29 @@ import { titleFilterOne, optionsFilterOne,
     titleFilterThree, optionsFilterThree} from "../data/DataFilter";
 
 /* DataProducListing */
-import { ListaProdutos } from "../data/DataProductListing";
+//import { ListaProdutos } from "../data/DataProductListing";
 
 import Section from "../components/Section";
 import ProductListing from "../components/ProductListing";
 
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 export default function ProductListingPage() {
     /* <h5 className={"titleFilter"}>{title}</h5>
             <input type={inputType} id={} name={} value={}></input> */
+    
+    const [productsList, setProductsList] = useState([]);
+
+    async function produtosAlta() {
+        const response = await axios.get('../src/data/dataProductListing.json');
+        console.log("produtos response", response.data.data);
+        setProductsList(response.data.data);
+    }
+
+    useEffect(() => {
+        produtosAlta();
+    }, []);
     return (
         <>
             <Layout>
@@ -62,7 +77,7 @@ export default function ProductListingPage() {
                     {/* div conteúdo principal */}
                     <div>
                         <Section title={"Produtos em Alta"} link={""}>
-                            <ProductListing products={ListaProdutos}/>
+                            <ProductListing products={productsList} />
                         </Section>
                     </div>
                     

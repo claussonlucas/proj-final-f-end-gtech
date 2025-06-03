@@ -1,13 +1,27 @@
 import "../styles/gallery.css"
 import arrowRight from "../assets/arrow-right.svg";
 import arrowLeft from "../assets/arrow-left.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Gallery ({width, height, radius, showThumbs,
 images}) {
     /* Variável de estado para guardar o index da array "images"
        para alterar a imagem mostrada */
     const [estado, setEstado] = useState(0);
+    const [safeImages, setSafeImages] = useState([]);
+
+    // Sincroniza as imagens com um estado seguro
+    useEffect(() => {
+        if (images && images.length > 0) {
+            setSafeImages(images);
+            setEstado(0); // Reseta para a primeira imagem
+        }
+    }, [images]);
+
+    if (safeImages.length === 0) {
+        return <div className="loading-gallery">Carregando galeria...</div>;
+    }
+
 
     // quando clicado a seta direita, avança 1 imagem da lista
     // de objetos
