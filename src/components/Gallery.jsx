@@ -41,7 +41,8 @@ images}) {
             <div>
                 <img
                     src={thumbnail.src} alt={`home-slide-${thumbnail.id + 1}`}
-                    style={{width:"117px", height: "95px",
+                    style={thumbnail.id == estado ? {width:"117px", height: "95px",
+                    borderRadius: radius, border: "2px solid var(--primary)"} : {width:"117px", height: "95px",
                     borderRadius: radius}}
                     className="divOneThumb"
                     onClick={() => setEstado(() => thumbnail.id)}/>
