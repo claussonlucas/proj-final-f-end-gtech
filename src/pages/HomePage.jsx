@@ -6,12 +6,6 @@ import "../styles/homePage.css";
 import Section from "../components/Section";
 import Layout from "./Layout";
 
-// Objetos do DataSection
-// Objetos do DataProductListing
-//import { ListaProdutos } from "../data/DataProductListing";
-// Objetos do DataGallery
-//import { sourcesGallery } from "../data/DataGallery";
-
 import Gallery from "../components/Gallery";
 // Imagens da section abaixo da Gallery
 import { useEffect, useState } from "react";

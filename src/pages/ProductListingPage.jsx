@@ -6,9 +6,9 @@ import Layout from "./Layout";
 import FilterGroup from "../components/FilterGroup";
 
 /* DataFilter */
-import { titleFilterOne, optionsFilterOne,
-    titleFilterTwo, optionsFilterTwo,
-    titleFilterThree, optionsFilterThree} from "../data/DataFilter";
+//import { titleFilterOne, optionsFilterOne,
+//    titleFilterTwo, optionsFilterTwo,
+//    titleFilterThree, optionsFilterThree} from "../data/DataFilter";
 
 /* DataProducListing */
 //import { ListaProdutos } from "../data/DataProductListing";
@@ -25,14 +25,33 @@ export default function ProductListingPage() {
     
     const [productsList, setProductsList] = useState([]);
 
+    const [titleFilterOne, setTitleFilterOne] = useState("");
+    const [optionsFilterOne, setOptionsFilterOne] = useState([]);
+    const [titleFilterTwo, setTitleFilterTwo] = useState("");
+    const [optionsFilterTwo, setOptionsFilterTwo] = useState([]);
+    const [titleFilterThree, setTitleFilterThree] = useState("");
+    const [optionsFilterThree, setOptionsFilterThree] = useState([]);
+
+
     async function produtosAlta() {
         const response = await axios.get('../src/data/dataProductListing.json');
-        console.log("produtos response", response.data.data);
+        //console.log("produtos response", response.data.data);
         setProductsList(response.data.data);
+    }
+
+        async function filter() {
+        const response = await axios.get('../src/data/dataFilter.json');
+        setTitleFilterOne(response.data.titleFilterOne);
+        setOptionsFilterOne(response.data.optionsFilterOne);
+        setTitleFilterTwo(response.data.titleFilterTwo);
+        setOptionsFilterTwo(response.data.optionsFilterTwo);
+        setTitleFilterThree(response.data.titleFilterThree);
+        setOptionsFilterThree(response.data.optionsFilterThree);
     }
 
     useEffect(() => {
         produtosAlta();
+        filter();
     }, []);
     return (
         <>

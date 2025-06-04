@@ -13,7 +13,6 @@ import "primereact/resources/themes/bootstrap4-light-purple/theme.css";
 import NotFound from './pages/NotFound';
 import HomePage from './pages/HomePage';
 
-import PageTeste from './components/PageTeste';
 import ProductListingPage from './pages/ProductListingPage';
 import ProductViewPage from './pages/ProductViewPage';
 
@@ -27,7 +26,6 @@ function App() {
           <Route path="/produtos" element={<ProductListingPage />} />
           <Route path="/produtos" element={<ProductListingPage />} />
           <Route path="/product/:id" element={<ProductViewPage />} />
-          <Route path='/teste' element={<PageTeste />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

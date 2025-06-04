@@ -3,7 +3,7 @@
 import "../styles/Header.css";
 
 import HeaderFull from "./HeaderFull";
-import HeaderReduzido from "./HeaderReduzido";
+import HeaderMobile from "./HeaderMobile";
 import { useState } from "react";
 
 const Header = () => {
@@ -24,7 +24,7 @@ const Header = () => {
                 estado > 1000 ?
                 <HeaderFull />
                 :
-                <HeaderReduzido />
+                <HeaderMobile />
             }
         </>
     );

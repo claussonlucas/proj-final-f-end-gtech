@@ -24,13 +24,9 @@
     
 }
 /* tive que fazer isso pois não estava parecido com o modelo */
-#btEntrar > a {
+#btEntrar {
     color: var(--white);
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
 }
-
-/* @media screen and (max-width: 1200px) {
-    .botesConta {display: none;}
-} */

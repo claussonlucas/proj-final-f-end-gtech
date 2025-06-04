@@ -7,7 +7,7 @@ export default function BotoesConta () {
         <>
             <div className="botesConta">
                 <div id="btCadastre"><Link to={"/form"}>Cadastre-se</Link></div>
-                <div id="btEntrar"><Link to={"/"}>Entrar</Link></div>
+                <div><Link to={"/"} id="btEntrar">Entrar</Link></div>
             </div>
         </>
     );

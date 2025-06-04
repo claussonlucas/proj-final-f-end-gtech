@@ -28,12 +28,3 @@ export default function FilterGroup ({ title, inputType, options }) {
         </div>
     );
 }
-
-/* 
- { return (
-        <>
-            <input className="inputs" type={inputType} id="vehicle1" name="vehicle1" value="Bike" />
-            <label for="vehicle1">{options.text}</label><br></br>
-        </>
-    );}
-*/

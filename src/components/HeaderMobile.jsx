@@ -4,11 +4,11 @@ import logoHeader from "../assets/logo-header.svg";
 import imgCar from "../assets/mini-cart.svg";
 import arrowLeft from "../assets/arrow-left.svg";
 
-import "../styles/headerReduzido.css";
+import "../styles/headerMobile.css";
 import BarSearch from "./barSearch";
 import { useState } from "react";
 
-export default function HeaderReduzido () {
+export default function HeaderMobile () {
     /* Estado usado para mostrar ou não a barra de pesquisa */
     const [estado, setEstado] = useState(false);
 
