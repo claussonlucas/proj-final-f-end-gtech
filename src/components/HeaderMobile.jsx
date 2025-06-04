@@ -2,7 +2,6 @@ import Logo from "./Logo";
 
 import logoHeader from "../assets/logo-header.svg";
 import imgCar from "../assets/mini-cart.svg";
-import arrowLeft from "../assets/arrow-left.svg";
 
 import "../styles/headerMobile.css";
 import BarSearch from "./barSearch";
@@ -11,16 +10,16 @@ import { Context } from "../context/AuthContext";
 
 export default function HeaderMobile () {
     // traz o estado criado no AuthContext
-    //const { modal, setModal } = useContext(Context);
-    //console.log(modal);
+    const { modal, setModal } = useContext(Context);
+    console.log(modal);
     /* Estado usado para mostrar ou não a barra de pesquisa */
     const [estado, setEstado] = useState(false);
 
-/*     function handleClickBarra() {
+    function handleClickBarra() {
         console.log(modal);
         
         setModal(!modal);
-    } */
+    }
 
     // Se clicar na lupa, altera o estado
     function handleClickLupa() {
@@ -31,7 +30,7 @@ export default function HeaderMobile () {
         <div className="mainHeaderRed">
             <div className="divHeaderRed">
                 {/* Barras */}
-                <div className="divHeaderRedBarras">
+                <div className="divHeaderRedBarras" onClick={handleClickBarra}>
                     <span className="pi pi-bars" style={{fontSize: "1.5rem"}}></span>
                 </div>
 
