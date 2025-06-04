@@ -16,8 +16,8 @@ import FilterGroup from "../components/FilterGroup";
 import Section from "../components/Section";
 import ProductListing from "../components/ProductListing";
 
-import axios from "axios";
 import { useEffect, useState } from "react";
+import { API } from "../service";
 
 export default function ProductListingPage() {
     /* <h5 className={"titleFilter"}>{title}</h5>
@@ -34,13 +34,13 @@ export default function ProductListingPage() {
 
 
     async function produtosAlta() {
-        const response = await axios.get('../src/data/dataProductListing.json');
+        const response = await API.get('/dataProductListing.json');
         //console.log("produtos response", response.data.data);
         setProductsList(response.data.data);
     }
 
         async function filter() {
-        const response = await axios.get('../src/data/dataFilter.json');
+        const response = await API.get('/dataFilter.json');
         setTitleFilterOne(response.data.titleFilterOne);
         setOptionsFilterOne(response.data.optionsFilterOne);
         setTitleFilterTwo(response.data.titleFilterTwo);

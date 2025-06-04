@@ -4,17 +4,12 @@ import Gallery from "../components/Gallery";
 import Layout from "./Layout";
 import Section from "../components/Section";
 
-// Objetos do galleryProduct
-//import { galleryProduct } from "../data/DataProduct";
-/* Dados DataProducView */
-//import { tamanhos, cores, linkRecomendado, recomendados} from "../data/DataProductView";
-
 import BuyBox from "../components/BuyBox";
 import ProductOptions from "../components/ProductOptions";
 import ProductListing from "../components/ProductListing";
 
-import axios from "axios";
 import { useEffect, useState } from "react";
+import { API } from "../service";
 
 export default function ProductViewPage () {
     const [galleryList, setGalleryList] = useState([]);
@@ -24,28 +19,28 @@ export default function ProductViewPage () {
     const [recomendados, setRecomendados] = useState([]);
 
     async function imagesGallery() {
-        const response = await axios.get('../src/data/dataProduct.json');
+        const response = await API.get('/dataProduct.json');
         setGalleryList(response.data.data);
 
     }
 
     async function tamanhosOptions() {
-        const response = await axios.get('../src/data/dataProductView.json');
+        const response = await API.get('/dataProductView.json');
         setTamanhosList(response.data.tamanhos);
     }
 
     async function coresOptions() {
-        const response = await axios.get('../src/data/dataProductView.json');
+        const response = await API.get('/dataProductView.json');
         setCoresList(response.data.cores);
     }
 
     async function linkRecomendadoFunc() {
-        const response = await axios.get('../src/data/dataProductView.json');
+        const response = await API.get('/dataProductView.json');
         setLinkRecomendado(response.data.linkRecomendado);
     }
 
     async function recomendadosFunc() {
-        const response = await axios.get('../src/data/dataProductView.json');
+        const response = await API.get('/dataProductView.json');
         setRecomendados(response.data.recomendados);
     }
 

@@ -7,14 +7,19 @@ primereact/resources/themes/bootstrap4-light-purple/theme.css
 primereact/resources/themes/lara-dark-purple/theme.css
 primereact/resources/themes/saga-purple/theme.css #
 */
+
+
 import "primeflex/primeflex.css";
 import "primeicons/primeicons.css";
 import "primereact/resources/themes/bootstrap4-light-purple/theme.css";
+
 import NotFound from './pages/NotFound';
 import HomePage from './pages/HomePage';
 
 import ProductListingPage from './pages/ProductListingPage';
 import ProductViewPage from './pages/ProductViewPage';
+
+//import { AuthContext } from "../context/AuthContext";
 
 function App() {
   

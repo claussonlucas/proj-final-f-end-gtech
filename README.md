@@ -21,8 +21,12 @@ O projeto segue os requisitos do projeto `Digital Store`, da escola `Digital Col
 - npm
 - Axios
 - Styled-components
+<<<<<<< HEAD
 - Prime React
 - React Router Dom
+=======
+- Prime React 
+>>>>>>> f2d02eb8d05f2ef4bb18849a89867eed25bd0e3a
 
 ## Sobre o Aplicativo
 
@@ -34,6 +38,7 @@ As páginas possuem elementos comuns entre elas, como o cabeçalho (header) com 
   <summary><strong>Informações</strong></summary>
 
 ## Estrutura de pastas
+<<<<<<< HEAD
 A estrutura de pastas segue o modelo de organização recomendado pelo projeto `Digital Store`, acrescentando algumas pastas e arquivos, que são necessários para o funcionamento do aplicativo.
 
 - Os arquivos `.gitignore`, `eslint.config.js`, `package-lock.json`, `package.json`, `vite.config.js`, são para o funcionamento do aplicativo, e instalados quando a framework `Vite` é instalado.
@@ -41,7 +46,17 @@ A estrutura de pastas segue o modelo de organização recomendado pelo projeto `
 - O `index.html` é o arquivo principal, que vai receber todos os componentes criados. O `TODO.txt` contém lembretes utilizados para criação do projeto.
 A pasta `src` contém os arquivos `main.jsx`, que substitui o elemento que tem o ID 'root' no `index.html`, pelo componente `App.jsx`, e o `App.jsx`, é responsável pelas rotas do site. Além dos arquivos CSS de cada um.
 
+- Na pasta `src`, também estão as principais pastas do projeto, como a pasta `components`, com os arquivos dos componentes React. A pasta `pages` armazena os arquivos relacionados às páginas do site. A pasta `service` tem o arquivo `index.js`, que serve para importar o `Axios`, que ajuda a montar o URL para o recebimento de dados das requisições do banco de dados de teste. Na pasta `styles` contém os arquivos CSS para estilos dos componentes. A pasta `assets` possui arquivos de imagen com extensão `.svg`.
+=======
+A estrutura de pastas segue o modelo de organização recomendado pelo projeto `Digital Store`, acrescentando algumas pastas e arquivos, que são necessários para o funcionamento do aplicativo. 
+
+- Os arquivos `.gitignore`, `eslint.config.js`, `package-lock.json`, `package.json`, `vite.config.js`, são para o funcionamento do aplicativo, e instalados quando a framework `Vite` é instalado. 
+
+- O `index.html` é o arquivo principal, que vai receber todos os componentes criados. O `TODO.txt` contém lembretes utilizados para criação do projeto. 
+A pasta `src` contém os arquivos `main.jsx`, que substitui o elemento que tem o ID 'root' no `index.html`, pelo componente `App.jsx`, e o `App.jsx`, é responsável pelas rotas do site. Além dos arquivos CSS de cada um.
+
 - Na pasta `src`, também estão as principais pastas do projeto, como a pasta `components`, com os arquivos dos componentes React. A pasta `pages` armazena os arquivos relacionados às páginas do site. Na pasta `styles` contém os arquivos CSS para estilos dos componentes. A pasta `assets` possui arquivos de imagen com extensão `.svg`.
+>>>>>>> f2d02eb8d05f2ef4bb18849a89867eed25bd0e3a
 
 - A pasta `data` possui os arquivos utilizados como um banco de dados para teste, para verificar se o aplicativo que serve como Front End consegue receber dados entregues por um servidor (que não está no escopo do projeto).
 
@@ -92,6 +107,11 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 |          |--- NotFound.jsx
 |          |--- ProductListingPage.jsx
 |          |--- ProductView.jsx
+<<<<<<< HEAD
+|--- |--- service/
+|          |--- index.js
+=======
+>>>>>>> f2d02eb8d05f2ef4bb18849a89867eed25bd0e3a
 |--- |--- styles/
 |          |--- Hearder.css
 |          |--- MenuBar.css
@@ -144,7 +164,11 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 
 - Página Inicial - Parte 1
  
+<<<<<<< HEAD
 ![homepage](./doc/homepage-p1.png)
+=======
+![homepage](./doc/homepage-p1-v0.png)
+>>>>>>> f2d02eb8d05f2ef4bb18849a89867eed25bd0e3a
 
 - Página Inicial - Parte 2
 
@@ -173,11 +197,19 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 
 - Página de Produtos - Parte 1
   
+<<<<<<< HEAD
 ![produtos](./doc/produtos-p1.png)
 
 - Página de Produtos - Parte 2
   
 ![produtos](./doc/produtos-p2.png)
+=======
+![produtos](./doc/produtos-p1-v0.png)
+
+- Página de Produtos - Parte 2
+  
+![produtos](./doc/produtos-p2-v0.png)
+>>>>>>> f2d02eb8d05f2ef4bb18849a89867eed25bd0e3a
 
 </details>
 
@@ -190,6 +222,7 @@ A terceira página contém informações de um produto específico.
 
 - Página Product - Parte 1
   
+<<<<<<< HEAD
 ![produtos](./doc/product-p1.png)
 
 - Página Product - Parte 2
@@ -199,6 +232,17 @@ A terceira página contém informações de um produto específico.
 - Página Product - Parte 3
   
 ![produtos](./doc/product-p3.png)
+=======
+![produtos](./doc/product-p1-v0.png)
+
+- Página Product - Parte 2
+  
+![produtos](./doc/product-p2-v0.png)
+
+- Página Product - Parte 3
+  
+![produtos](./doc/product-p3-v0.png)
+>>>>>>> f2d02eb8d05f2ef4bb18849a89867eed25bd0e3a
 
 </details>
 
