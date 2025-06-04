@@ -9,10 +9,33 @@ import imgTwitter from "../assets/twitter.svg";
 import "../styles/footer.css";
 import Information from "./Information";
 import Logo from "./Logo";
-// Objetos do DataFooter
-import { objOne, objThree, objTwo, titleOne, titleThree, titleTwo } from "../data/DataFooter";
+
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function Footer () {
+
+    const [titleOne, setTitleOne] = useState("");
+    const [objOne, setObjOne] = useState([]);
+    const [titleTwo, setTitleTwo] = useState("");
+    const [objTwo, setObjTwo] = useState([]);
+    const [titleThree, setTitleThree] = useState("");
+    const [objThree, setObjThree] = useState([]);
+
+    // recebe info do banco de dados
+    async function footerInfo() {
+        const response = await axios.get('../src/data/dataFooter.json');
+        setTitleOne(response.data.titleOne);
+        setObjOne(response.data.objOne);
+        setTitleTwo(response.data.titleTwo);
+        setObjTwo(response.data.objTwo);
+        setTitleThree(response.data.titleThree);
+        setObjThree(response.data.objThree);
+    }
+
+    useEffect(() => {
+        footerInfo();
+    }, []);
     
     return (
         <footer>

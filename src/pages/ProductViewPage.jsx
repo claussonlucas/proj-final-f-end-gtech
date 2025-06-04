@@ -5,15 +5,58 @@ import Layout from "./Layout";
 import Section from "../components/Section";
 
 // Objetos do galleryProduct
-import { galleryProduct } from "../data/DataProduct";
+//import { galleryProduct } from "../data/DataProduct";
 /* Dados DataProducView */
-import { tamanhos, cores, linkRecomendado, recomendados} from "../data/DataProductView";
+//import { tamanhos, cores, linkRecomendado, recomendados} from "../data/DataProductView";
 
 import BuyBox from "../components/BuyBox";
 import ProductOptions from "../components/ProductOptions";
 import ProductListing from "../components/ProductListing";
 
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 export default function ProductViewPage () {
+    const [galleryList, setGalleryList] = useState([]);
+    const [tamanhosList, setTamanhosList] = useState([]);
+    const [CoresList, setCoresList] = useState([]);
+    const [linkRecomendado, setLinkRecomendado] = useState([]);
+    const [recomendados, setRecomendados] = useState([]);
+
+    async function imagesGallery() {
+        const response = await axios.get('../src/data/dataProduct.json');
+        setGalleryList(response.data.data);
+
+    }
+
+    async function tamanhosOptions() {
+        const response = await axios.get('../src/data/dataProductView.json');
+        setTamanhosList(response.data.tamanhos);
+    }
+
+    async function coresOptions() {
+        const response = await axios.get('../src/data/dataProductView.json');
+        setCoresList(response.data.cores);
+    }
+
+    async function linkRecomendadoFunc() {
+        const response = await axios.get('../src/data/dataProductView.json');
+        setLinkRecomendado(response.data.linkRecomendado);
+    }
+
+    async function recomendadosFunc() {
+        const response = await axios.get('../src/data/dataProductView.json');
+        setRecomendados(response.data.recomendados);
+    }
+
+    useEffect(() => {
+        imagesGallery();
+        tamanhosOptions();
+        coresOptions();
+        linkRecomendadoFunc();
+        recomendadosFunc();
+    }, []);
+
 
     return (
         <>
@@ -24,7 +67,7 @@ export default function ProductViewPage () {
                     width={"700"}
                     height={"570"}
                     radius={"4px"}
-                    images={galleryProduct}
+                    images={galleryList}
                     showThumbs/>
 
                     <BuyBox
@@ -37,14 +80,14 @@ export default function ProductViewPage () {
                         description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis molestias iusto optio porro id odit quasi architecto eos sunt quibusdam quis adipisci"}
                         >
                         <ProductOptions
-                            options={tamanhos}
+                            options={tamanhosList}
                             radius={"5px"}
                             shape={"square"}
                             type={"text"}
                             />
 
                         <ProductOptions
-                            options={cores}
+                            options={CoresList}
                             radius={"5px"}
                             shape={"circle"}
                             type={"color"}

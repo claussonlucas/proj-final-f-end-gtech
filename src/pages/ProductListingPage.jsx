@@ -6,19 +6,53 @@ import Layout from "./Layout";
 import FilterGroup from "../components/FilterGroup";
 
 /* DataFilter */
-import { titleFilterOne, optionsFilterOne,
-    titleFilterTwo, optionsFilterTwo,
-    titleFilterThree, optionsFilterThree} from "../data/DataFilter";
+//import { titleFilterOne, optionsFilterOne,
+//    titleFilterTwo, optionsFilterTwo,
+//    titleFilterThree, optionsFilterThree} from "../data/DataFilter";
 
 /* DataProducListing */
-import { ListaProdutos } from "../data/DataProductListing";
+//import { ListaProdutos } from "../data/DataProductListing";
 
 import Section from "../components/Section";
 import ProductListing from "../components/ProductListing";
 
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 export default function ProductListingPage() {
     /* <h5 className={"titleFilter"}>{title}</h5>
             <input type={inputType} id={} name={} value={}></input> */
+    
+    const [productsList, setProductsList] = useState([]);
+
+    const [titleFilterOne, setTitleFilterOne] = useState("");
+    const [optionsFilterOne, setOptionsFilterOne] = useState([]);
+    const [titleFilterTwo, setTitleFilterTwo] = useState("");
+    const [optionsFilterTwo, setOptionsFilterTwo] = useState([]);
+    const [titleFilterThree, setTitleFilterThree] = useState("");
+    const [optionsFilterThree, setOptionsFilterThree] = useState([]);
+
+
+    async function produtosAlta() {
+        const response = await axios.get('../src/data/dataProductListing.json');
+        //console.log("produtos response", response.data.data);
+        setProductsList(response.data.data);
+    }
+
+        async function filter() {
+        const response = await axios.get('../src/data/dataFilter.json');
+        setTitleFilterOne(response.data.titleFilterOne);
+        setOptionsFilterOne(response.data.optionsFilterOne);
+        setTitleFilterTwo(response.data.titleFilterTwo);
+        setOptionsFilterTwo(response.data.optionsFilterTwo);
+        setTitleFilterThree(response.data.titleFilterThree);
+        setOptionsFilterThree(response.data.optionsFilterThree);
+    }
+
+    useEffect(() => {
+        produtosAlta();
+        filter();
+    }, []);
     return (
         <>
             <Layout>
@@ -62,7 +96,7 @@ export default function ProductListingPage() {
                     {/* div conteúdo principal */}
                     <div>
                         <Section title={"Produtos em Alta"} link={""}>
-                            <ProductListing products={ListaProdutos}/>
+                            <ProductListing products={productsList} />
                         </Section>
                     </div>
                     
