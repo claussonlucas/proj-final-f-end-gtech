@@ -9,29 +9,37 @@ import Layout from "./Layout";
 import Gallery from "../components/Gallery";
 // Imagens da section abaixo da Gallery
 import { useEffect, useState } from "react";
-import img1 from "../../public/collection-1.png";
-import img2 from "../../public/collection-2.png";
-import img3 from "../../public/collection-3.png";
+import img1 from "/collection-1.png";
+import img2 from "/collection-2.png";
+import img3 from "/collection-3.png";
 
-import axios from "axios";
-//import { API } from "../service/index";
 import ProductListing from "../components/ProductListing";
+import { API } from "../service";
 
-//../src/data/dataProductListing.json
+
+/*
+import { Context } from "../context/AuthContext";
+<AuthContext>
+
+import ModalMenuMobile from "../components/ModalMenuMobile";
+{ modal && <ModalMenuMobile /> }
+*/
 
 const HomePage = () => {
+    //const { modal, setModal } = useContext(Context);
+
     const [galleryList, setGalleryList] = useState([]);
     const [productsList, setProductsList] = useState([]);
 
     async function imagesGallery() {
-        const response = await axios.get('../src/data/dataGallery.json');
+        const response = await API.get('/dataGallery.json');
         console.log("galleryList response", response.data.data);
         setGalleryList(response.data.data);
 
     }
 
     async function produtosAlta() {
-        const response = await axios.get('../src/data/dataProductListing.json');
+        const response = await API.get('/dataProductListing.json');
         console.log("produtos response", response.data.data);
         setProductsList(response.data.data);
     }
@@ -43,6 +51,7 @@ const HomePage = () => {
 
     return (
         <>
+            
             <Layout >
                 {/* <h2>Home</h2> */}
                 
