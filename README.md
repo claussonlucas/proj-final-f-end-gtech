@@ -27,7 +27,7 @@ O projeto segue os requisitos do projeto `Digital Store`, da escola `Digital Col
 
 ## Sobre o Aplicativo
 
-O aplicativo apresenta três páginas ao cliente (usuário), sendo a primeira a página principal. A segunda, com uma lista de produtos, com opções para filtrar (por enquanto não funcionais). E a terceira, com informações de um produto específico.
+O aplicativo apresenta três páginas ao cliente (usuário), sendo a primeira a página principal. A segunda, com uma lista de produtos, com opções para filtrar (não funcionais). E a terceira, com informações de um produto específico.
 
 As páginas possuem elementos comuns entre elas, como o cabeçalho (header) com a barra de menus, e o rodapé (footer) .
 
@@ -188,12 +188,6 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
   
 ![produtos](./doc/produtos-p2.png)
 
-![produtos](./doc/produtos-p1-v0.png)
-
-- Página de Produtos - Parte 2
-  
-![produtos](./doc/produtos-p2-v0.png)
-
 </details>
 
 ### 3 - Página de um Produto Específico
@@ -214,16 +208,6 @@ A terceira página contém informações de um produto específico.
 - Página Product - Parte 3
   
 ![produtos](./doc/product-p3.png)
-
-![produtos](./doc/product-p1-v0.png)
-
-- Página Product - Parte 2
-  
-![produtos](./doc/product-p2-v0.png)
-
-- Página Product - Parte 3
-  
-![produtos](./doc/product-p3-v0.png)
 
 </details>
 
