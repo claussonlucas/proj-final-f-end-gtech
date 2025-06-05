@@ -5,7 +5,7 @@ import { createContext, useState } from "react";
 
 export const Context = createContext();
 
-export const AuthContext = ({ children }) => {
+export const MenuContext = ({ children }) => {
     // estado visível para todos os children
     // usada para abrir e fechar modal
     const [modal, setModal] = useState(false);

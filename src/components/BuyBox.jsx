@@ -2,7 +2,7 @@
 // Data: 17/05/2025
 
 import "../styles/buyBox.css"
-import imgStar from "../assets/star-icon.svg";
+import imgStar from "../assets/star-icon-white.svg";
 
 /* COLOCAR COR ESTRELA */
 

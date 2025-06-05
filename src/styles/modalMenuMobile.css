@@ -1,0 +1,33 @@
+.overlay {
+    width: 100%;
+    height: 800px;
+    background-color: #00000098;
+    position: absolute;
+    left: 0px;
+    top: 104px;
+    z-index: 1;
+}
+
+.divMenuMob {
+    width: 70%;
+    height: 540px;
+    background-color: var(--white);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+
+.h4MenuMob {
+    color: var(--dark-gray-2);
+    padding-left: 15px;
+}
+
+.lineMenuMob {
+    position: relative;
+    top: 230px;
+    left: 0px;
+    z-index: 3;
+    margin: 0 30px;
+}
+

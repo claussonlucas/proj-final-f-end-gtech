@@ -3,19 +3,21 @@
 
 import "../styles/homePage.css";
 
-import Section from "../components/Section";
+//import { AuthContext } from "../context/AuthContext";
+import Gallery from "../components/Gallery";
+import ModalMenuMobile from "../components/ModalMenuMobile";
+import { Context } from "../context/MenuContext";
 import Layout from "./Layout";
 
-import Gallery from "../components/Gallery";
 // Imagens da section abaixo da Gallery
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import img1 from "/collection-1.png";
 import img2 from "/collection-2.png";
 import img3 from "/collection-3.png";
 
 import ProductListing from "../components/ProductListing";
+import Section from "../components/Section";
 import { API } from "../service";
-
 
 /*
 import { Context } from "../context/AuthContext";
@@ -26,21 +28,21 @@ import ModalMenuMobile from "../components/ModalMenuMobile";
 */
 
 const HomePage = () => {
-    //const { modal, setModal } = useContext(Context);
+    const { modal } = useContext(Context);
 
     const [galleryList, setGalleryList] = useState([]);
     const [productsList, setProductsList] = useState([]);
 
     async function imagesGallery() {
         const response = await API.get('/dataGallery.json');
-        console.log("galleryList response", response.data.data);
+        //console.log("galleryList response", response.data.data);
         setGalleryList(response.data.data);
 
     }
 
     async function produtosAlta() {
         const response = await API.get('/dataProductListing.json');
-        console.log("produtos response", response.data.data);
+        //console.log("produtos response", response.data.data);
         setProductsList(response.data.data);
     }
 
@@ -51,9 +53,11 @@ const HomePage = () => {
 
     return (
         <>
-            
             <Layout >
-                {/* <h2>Home</h2> */}
+                {/* <h1>Digital Store</h1> */}
+
+                {/* menu mobile */}
+                { modal && <ModalMenuMobile /> }
                 
                 {/* Componente Gallery - width: 1351 (ajustado para monitor HD) */}
                 <Gallery
@@ -77,8 +81,8 @@ const HomePage = () => {
                         <ProductListing products={productsList} />
                     </Section>
                 </div>
-                
             </Layout>
+
         </>
     );
 }

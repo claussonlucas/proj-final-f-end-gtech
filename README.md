@@ -72,11 +72,9 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 |--- src/
 |--- |--- assets/
 |--- |--- components/
-|          |--- Header.jsx
-|          |--- Footer.jsx
-|--- |--- components/
 |          |--- BarSearch.jsx
 |          |--- BotoesConta.jsx
+|          |--- BotoesContaMobile.jsx
 |          |--- BuyBox.jsx
 |          |--- FilterGroup.jsx
 |          |--- Footer.jsx
@@ -113,23 +111,23 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 =======
 >>>>>>> f2d02eb8d05f2ef4bb18849a89867eed25bd0e3a
 |--- |--- styles/
-|          |--- Hearder.css
-|          |--- MenuBar.css
-|          |--- ProductViewPage.css
 |          |--- barSearch.css
 |          |--- botoesConta.css
+|          |--- botoesContaMobile.css
 |          |--- buyBox.css
 |          |--- filterGroup.css
-|          |--- foote.css
+|          |--- footer.css
 |          |--- gallery.css
+|          |--- Hearder.css
 |          |--- hearderMobile.css
 |          |--- homePage.css
 |          |--- logo.css
+|          |--- modalMenuMobile.css
 |          |--- productCard.css
 |          |--- productListing.css
 |          |--- productListingPage.css
 |          |--- productOptions.css
-
+|          |--- ProductViewPage.css
 |--- |--- App.css
 |--- |--- App.jsx
 |--- |--- index.css

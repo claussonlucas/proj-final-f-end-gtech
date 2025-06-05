@@ -18,7 +18,6 @@ const Header = () => {
 
     return (
         <>
-            {/* <h1>HEADER</h1> */}
             {/* Teste de qual compon. renderizar */}
             {
                 estado > 1000 ?

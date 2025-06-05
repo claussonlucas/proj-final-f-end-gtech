@@ -13,27 +13,30 @@ import "primeflex/primeflex.css";
 import "primeicons/primeicons.css";
 import "primereact/resources/themes/bootstrap4-light-purple/theme.css";
 
-import NotFound from './pages/NotFound';
 import HomePage from './pages/HomePage';
+import NotFound from './pages/NotFound';
 
+import { MenuContext } from './context/MenuContext';
 import ProductListingPage from './pages/ProductListingPage';
 import ProductViewPage from './pages/ProductViewPage';
 
-//import { AuthContext } from "../context/AuthContext";
+
 
 function App() {
   
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />}/>
-          <Route path="/produtos" element={<ProductListingPage />} />
-          <Route path="/produtos" element={<ProductListingPage />} />
-          <Route path="/product/:id" element={<ProductViewPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <MenuContext>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage />}/>
+            <Route path="/produtos" element={<ProductListingPage />} />
+            <Route path="/product/:id" element={<ProductViewPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </MenuContext>
+      
     </>
   )
 }
