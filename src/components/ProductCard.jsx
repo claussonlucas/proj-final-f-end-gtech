@@ -41,10 +41,10 @@ export default function ProductCard ({image, name, price, priceDiscount=""}) {
 
             <div className="prices">
                 
-                {priceDiscount !== "" ?  <h4 className="price" style={{color: "var(--light-gray)"}}><del>{price}</del></h4>
-                : <h4 className="price">{price}</h4>}
+                {priceDiscount !== "" ?  <h4 className="priceCard" style={{color: "var(--light-gray)"}}><del>{price}</del></h4>
+                : <h4 className="priceCard">{price}</h4>}
 
-                <h4 className="priceDiscount">{priceDiscount}</h4>
+                <h4 className="priceDiscountCard">{priceDiscount}</h4>
             </div>
             
         </div>

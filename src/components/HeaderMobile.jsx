@@ -3,21 +3,20 @@ import Logo from "./Logo";
 import logoHeader from "../assets/logo-header.svg";
 import imgCar from "../assets/mini-cart.svg";
 
+import { useContext, useState } from "react";
+import { Context } from "../context/MenuContext";
 import "../styles/headerMobile.css";
 import BarSearch from "./barSearch";
-import { useContext, useState } from "react";
-import { Context } from "../context/AuthContext";
 
 export default function HeaderMobile () {
     // traz o estado criado no AuthContext
     const { modal, setModal } = useContext(Context);
-    console.log(modal);
+    //console.log(modal);
+    
     /* Estado usado para mostrar ou não a barra de pesquisa */
     const [estado, setEstado] = useState(false);
 
     function handleClickBarra() {
-        console.log(modal);
-        
         setModal(!modal);
     }
 
