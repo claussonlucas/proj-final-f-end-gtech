@@ -41,10 +41,10 @@ images}) {
             <div>
                 <img
                     src={thumbnail.src} alt={`home-slide-${thumbnail.id + 1}`}
-                    style={thumbnail.id == estado ? {width:"117px", height: "95px",
+                    className="divOneThumb"
+                    style={thumbnail.id == estado ? {width: "117px", height: "95px",
                     borderRadius: radius, border: "2px solid var(--primary)"} : {width:"117px", height: "95px",
                     borderRadius: radius}}
-                    className="divOneThumb"
                     onClick={() => setEstado(() => thumbnail.id)}/>
             </div>
         </li>
@@ -59,7 +59,7 @@ images}) {
         <div className="containerGallery">
             <div className="galleryOne">
                 <img src={image.src} alt={"Imagem Galeria"} className="imgGallery"
-                style={{width: width + "px", height: height + "px", borderRadius: radius}}/>
+                style={{width: width, height: height, borderRadius: radius}}/>
                 
                 
                 {estado > 0 &&

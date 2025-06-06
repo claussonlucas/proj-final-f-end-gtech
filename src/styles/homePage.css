@@ -8,6 +8,10 @@
     background-color: var(--light-gray-3);
 }
 
+.titleHomePage {
+    display: none;
+}
+
 @media screen and (max-width: 700px) {
     .compGallery{
         width: 500px;

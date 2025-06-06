@@ -7,7 +7,7 @@ import Gallery from "../components/Gallery";
 
 import Layout from "./Layout";
 
-import { MenuContext } from './context/MenuContext';
+import { MenuContext } from '../context/MenuContext';
 
 // Imagens da section abaixo da Gallery
 import { useEffect, useState } from "react";
@@ -45,7 +45,8 @@ const HomePage = () => {
         <>
             <MenuContext>
                 <Layout >
-                    {/* <h1>Digital Store</h1> */}
+                    {/* Usado para motores de busca (não aparece na tela) */}
+                    <h1 className="titleHomePage">Digital Store</h1>
                     
                     {/* Componente Gallery - width: 1351 (ajustado para monitor HD) */}
                     <Gallery

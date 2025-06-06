@@ -1,5 +1,7 @@
 import "../styles/productViewPage.css";
 
+import { MenuContext } from '../context/MenuContext';
+
 import Gallery from "../components/Gallery";
 import Layout from "./Layout";
 import Section from "../components/Section";
@@ -55,48 +57,50 @@ export default function ProductViewPage () {
 
     return (
         <>
-            <Layout>
-                {/* div Gallery */}
-                <div className="divGalleryBuyBox" >
-                    <Gallery
-                    width={"700"}
-                    height={"570"}
-                    radius={"4px"}
-                    images={galleryList}
-                    showThumbs/>
+            <MenuContext>
+                <Layout>
+                    {/* div Gallery */}
+                    <div className="divGalleryBuyBox" >
+                        <Gallery
+                        width={"700"}
+                        height={"570"}
+                        radius={"4px"}
+                        images={galleryList}
+                        showThumbs/>
 
-                    <BuyBox
-                        name={"nome do produto"}
-                        reference={"128373"}
-                        stars={"4.7"}
-                        rating={"(90 avaliações)"}
-                        price={"239.00"}
-                        priceDiscount={"190.00"}
-                        description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis molestias iusto optio porro id odit quasi architecto eos sunt quibusdam quis adipisci"}
-                        >
-                        <ProductOptions
-                            options={tamanhosList}
-                            radius={"5px"}
-                            shape={"square"}
-                            type={"text"}
-                            />
+                        <BuyBox
+                            name={"nome do produto"}
+                            reference={"128373"}
+                            stars={"4.7"}
+                            rating={"(90 avaliações)"}
+                            price={"239.00"}
+                            priceDiscount={"190.00"}
+                            description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis molestias iusto optio porro id odit quasi architecto eos sunt quibusdam quis adipisci"}
+                            >
+                            <ProductOptions
+                                options={tamanhosList}
+                                radius={"5px"}
+                                shape={"square"}
+                                type={"text"}
+                                />
 
-                        <ProductOptions
-                            options={CoresList}
-                            radius={"5px"}
-                            shape={"circle"}
-                            type={"color"}
-                            />
+                            <ProductOptions
+                                options={CoresList}
+                                radius={"5px"}
+                                shape={"circle"}
+                                type={"color"}
+                                />
 
-                    </BuyBox>
+                        </BuyBox>
+                        
+                    </div>
+
+                    <Section title={"Produtos recomendados"} link={linkRecomendado}>
+                            <ProductListing products={recomendados}/>
+                        </Section>
                     
-                </div>
-
-                <Section title={"Produtos recomendados"} link={linkRecomendado}>
-                        <ProductListing products={recomendados}/>
-                    </Section>
-                
-            </Layout>
+                </Layout>
+            </MenuContext>
         </>
     );
 }

@@ -18,18 +18,21 @@ export default function HeaderMobile () {
 
     function handleClickBarra() {
         setModal(!modal);
+        setEstado(false);
     }
 
     // Se clicar na lupa, altera o estado
     function handleClickLupa() {
         setEstado(!estado);
+        setModal(false);
     }
 
     return (
         <div className="mainHeaderRed">
             <div className="divHeaderRed">
-                {/* Barras */}
-                <div className="divHeaderRedBarras" onClick={handleClickBarra}>
+                {/* Botão Barras */}
+                <div className="divHeaderRedBarras" onClick={handleClickBarra}
+                style={modal ? {color: "var(--primary)"} : {color: "black"}}>
                     <span className="pi pi-bars" style={{fontSize: "1.5rem"}}></span>
                 </div>
 
@@ -37,7 +40,8 @@ export default function HeaderMobile () {
 
                 {/* Lupa */}
                 <div className="divHeaderRedLupa"
-                onClick={handleClickLupa}>
+                onClick={handleClickLupa}
+                style={estado ? {color: "var(--primary)"} : {color: "black"}}>
                     <span className="pi pi-search"></span>
                 </div>
 
