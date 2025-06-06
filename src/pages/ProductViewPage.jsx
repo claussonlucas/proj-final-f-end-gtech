@@ -96,8 +96,8 @@ export default function ProductViewPage () {
                     </div>
 
                     <Section title={"Produtos recomendados"} link={linkRecomendado}>
-                            <ProductListing products={recomendados}/>
-                        </Section>
+                        <ProductListing products={recomendados}/>
+                    </Section>
                     
                 </Layout>
             </MenuContext>
