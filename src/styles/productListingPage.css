@@ -1,6 +1,6 @@
 .divProductListPage {
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     background-color: var(--light-gray-3);
     padding: 10px 35px;
 }
@@ -56,4 +56,11 @@
 .linefilter {
     border: 1px solid var(--light-gray-2);
     margin: 20px 0;
+}
+
+/* resposividade da página */
+@media screen and (max-width: 800px) {
+    .divProductListPage {
+        flex-flow: row wrap;
+    }
 }

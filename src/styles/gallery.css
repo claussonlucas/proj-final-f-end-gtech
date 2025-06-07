@@ -82,10 +82,3 @@
 .divMiniatura > ul > li {
     list-style: none;
 }
-
-@media screen and (min-width: 700px) {
-    .imgGallery{
-        width: 100px;
-        height: 100px;
-    }
-}
