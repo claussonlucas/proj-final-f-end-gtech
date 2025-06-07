@@ -1,10 +1,13 @@
 import "../styles/gallery.css"
 import arrowRight from "../assets/arrow-right.svg";
 import arrowLeft from "../assets/arrow-left.svg";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { Context } from "../context/MenuContext";
 
 export default function Gallery ({width, height, radius, showThumbs,
 images}) {
+    const { tamanhoTela } = useContext(Context);
+
     /* Variável de estado para guardar o index da array "images"
        para alterar a imagem mostrada */
     const [estado, setEstado] = useState(0);
@@ -59,8 +62,8 @@ images}) {
         <div className="containerGallery">
             <div className="galleryOne">
                 <img src={image.src} alt={"Imagem Galeria"} className="imgGallery"
-                style={{width: width, height: height, borderRadius: radius}}/>
-                
+                style={tamanhoTela > 1000 ? {width: width + "px", height: height + "px", borderRadius: radius} :
+                {width: "640px", height: "303px", borderRadius: radius}}/>
                 
                 {estado > 0 &&
                     <div className="arrowLeft" onClick={handleClickLeft}

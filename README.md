@@ -1,6 +1,6 @@
 # PROJETO FINAL FRONT END GERAÇÃO TECH - 2025
 
-O objetivo do projeto é criar um um aplicativo Web simulando uma loja virtual, para venda de produtos, como tênis de vários modelos. Utiliza a biblioteca `React`, com auxílio da ferramenta `Vite`, com a linguagem JavaScript.
+O objetivo do projeto é criar um um aplicativo Web simulando uma loja virtual, para venda de produtos, como tênis de vários modelos. Utiliza a biblioteca `React`, com auxílio da ferramenta `Vite`, com a linguagem `JavaScript`.
 
 A criação faz parte do projeto final Frontend do curso de **Desenvolvedor Web Full Stack - Online - 2.0 - 2025**, da Geração Tech, IEL.
 
@@ -38,23 +38,14 @@ O aplicativo busca ter responsividade para a versão em telas menores.
 
 ## Estrutura de pastas
 
-A estrutura de pastas segue o modelo de organização recomendado pelo projeto `Digital Store`, acrescentando algumas pastas e arquivos, que são necessários para o funcionamento do aplicativo.
+A estrutura de pastas segue o modelo de organização recomendado pelo projeto `Digital Store`, acrescentando algumas pastas e arquivos, que são necessárias para o funcionamento do aplicativo.
 
-- Os arquivos `.gitignore`, `eslint.config.js`, `package-lock.json`, `package.json`, `vite.config.js`, são para o funcionamento do aplicativo, e instalados quando a framework `Vite` é instalado.
+- Os arquivos `.gitignore`, `eslint.config.js`, `package-lock.json`, `package.json`, `vite.config.js`, são para o funcionamento do aplicativo, e instalados quando a framework `Vite` é instalada.
 
 - O `index.html` é o arquivo principal, que vai receber todos os componentes criados. O `TODO.txt` contém lembretes utilizados para criação do projeto.
-A pasta `src` contém os arquivos `main.jsx`, que substitui o elemento que tem o ID 'root' no `index.html`, pelo componente `App.jsx`, e o `App.jsx`, é responsável pelas rotas do site. Além dos arquivos CSS de cada um.
+A pasta `src` contém os arquivos `main.jsx`, que substitui o elemento que tem o ID 'root' no `index.html`, pelo componente `App.jsx`. O `App.jsx`, é responsável pelas rotas do site. Contém também os arquivos CSS de cada um.
 
 - Na pasta `src`, também estão as principais pastas do projeto, como a pasta `components`, com os arquivos dos componentes React. A pasta `pages` armazena os arquivos relacionados às páginas do site. A pasta `service` tem o arquivo `index.js`, que serve para importar o `Axios`, que ajuda a montar o URL para o recebimento de dados das requisições do banco de dados de teste. Na pasta `styles` contém os arquivos CSS para estilos dos componentes. A pasta `assets` possui arquivos de imagen com extensão `.svg`.
-
-A estrutura de pastas segue o modelo de organização recomendado pelo projeto `Digital Store`, acrescentando algumas pastas e arquivos, que são necessários para o funcionamento do aplicativo.
-
-- Os arquivos `.gitignore`, `eslint.config.js`, `package-lock.json`, `package.json`, `vite.config.js`, são para o funcionamento do aplicativo, e instalados quando a framework `Vite` é instalado.
-
-- O `index.html` é o arquivo principal, que vai receber todos os componentes criados. O `TODO.txt` contém lembretes utilizados para criação do projeto.
-A pasta `src` contém os arquivos `main.jsx`, que substitui o elemento que tem o ID 'root' no `index.html`, pelo componente `App.jsx`, e o `App.jsx`, é responsável pelas rotas do site. Além dos arquivos CSS de cada um.
-
-- Na pasta `src`, também estão as principais pastas do projeto, como a pasta `components`, com os arquivos dos componentes React. A pasta `pages` armazena os arquivos relacionados às páginas do site. Na pasta `styles` contém os arquivos CSS para estilos dos componentes. A pasta `assets` possui arquivos de imagen com extensão `.svg`.
 
 - A pasta `data` possui os arquivos utilizados como um banco de dados para teste, para verificar se o aplicativo que serve como Front End consegue receber dados entregues por um servidor (que não está no escopo do projeto).
 
@@ -85,6 +76,8 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 |          |--- Logo.jsx
 |          |--- Lupa.jsx
 |          |--- MenuBar.jsx
+|          |--- MenuBarMobile.jsx
+|          |--- ModalMenuMobile.jsx
 |          |--- ProductCard.jsx
 |          |--- ProductListing.jsx
 |          |--- ProductOptions.jsx
@@ -98,13 +91,12 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 |          |--- dataProduct.json
 |          |--- dataProductListing.json
 |          |--- dataProductView.json
-|          |--- dataSection.json
 |--- |--- pages/
 |          |--- HomePage.jsx
 |          |--- Layout.jsx
 |          |--- NotFound.jsx
 |          |--- ProductListingPage.jsx
-|          |--- ProductView.jsx
+|          |--- ProductViewPage.jsx
 |--- |--- service/
 |          |--- index.js
 |--- |--- styles/
@@ -130,13 +122,12 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 |--- |--- index.css
 |--- |--- main.js
 |--- .gitignore
-|--- README.md
-|--- TODO.txt
 |--- eslint.config.js
-|--- App.js
 |--- index.html
 |--- package-lock.json
 |--- package.json
+|--- README.md
+|--- TODO.txt
 |--- vite.config.js
 ```
 </details>

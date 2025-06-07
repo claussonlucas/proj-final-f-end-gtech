@@ -4,8 +4,8 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 import ModalMenuMobile from "../components/ModalMenuMobile";
-import { Context } from "../context/MenuContext";
 import { useContext } from "react";
+import { Context } from "../context/MenuContext";
 
 const Layout = ({ children }) => {
     const { modal } = useContext(Context);

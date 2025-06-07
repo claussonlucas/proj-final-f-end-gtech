@@ -4,23 +4,17 @@ import "../styles/Header.css";
 
 import HeaderFull from "./HeaderFull";
 import HeaderMobile from "./HeaderMobile";
-import { useState } from "react";
+import { useContext } from "react";
+import { Context } from "../context/MenuContext";
 
 const Header = () => {
-    // InnerWidth: Retorna o tamanho atual da tela
-    const [estado, setEstado] = useState(innerWidth);
-        
-    // Monitora se o tamanho da tela mudou
-    window.addEventListener("resize", () => {
-    // Altera o estado caso o tamanho mude
-    setEstado(innerWidth);
-    });
+    const { tamanhoTela } = useContext(Context);
 
     return (
         <>
             {/* Teste de qual compon. renderizar */}
             {
-                estado > 1000 ?
+                tamanhoTela > 1000 ?
                 <HeaderFull />
                 :
                 <HeaderMobile />
