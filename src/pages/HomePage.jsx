@@ -27,7 +27,6 @@ const HomePage = () => {
         const response = await API.get('/dataGallery.json');
         //console.log("galleryList response", response.data.data);
         setGalleryList(response.data.data);
-
     }
 
     async function produtosAlta() {
@@ -77,7 +76,3 @@ const HomePage = () => {
 }
 
 export default HomePage;
-
-/*
-
-*/

@@ -1,11 +1,9 @@
 // ProductOptions.jsx
 // Data: 17/05/2025
-//import { useState } from "react";
+
 import "../styles/productOptions.css"
 
 export default function ProductOptions ({ options, radius, shape, type }) {
-    
-    /* FAZER LÓGICA SELEÇÃO DE ITEM E MUDAR COR */
 
     // Laço para mostrar itens
     let lista = options.map(option =>
@@ -19,8 +17,6 @@ export default function ProductOptions ({ options, radius, shape, type }) {
             </li>
     );
 
-    
-
     return (
         <>
             {/* Título */}
@@ -31,20 +27,3 @@ export default function ProductOptions ({ options, radius, shape, type }) {
         </>
     );
 }
-
-/*
-// tentativa com forEach
-let lista = "";
-    options.forEach(option =>
-        lista += <li>{option}</li>
-    );
-    //lista = "</ul>";
-
-// tentativa de logica para selecionar 1 item e borda mudar cor
-const [estado, setEstado] = useState();
-    function handleClick(params) {
-        setEstado(!estado);
-    }
-
-    onClick={handleClick}
-*/

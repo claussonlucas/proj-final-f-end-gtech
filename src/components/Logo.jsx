@@ -1,23 +1,17 @@
 // Logo.jsx
+import { Link } from "react-router-dom";
 import "../styles/logo.css";
-
-/* style={{width:"253px", height:"44px"}} */
-
-/* como chamar esse componente */
-/* <Logo image={A} />
-A: variável que recebe uma imagem importada no
-componente que chama <Logo />
-Ex.: import Logo from "./Logo";
-*/
 
 const Logo = (props) => {
     return (
         <>
-            <img
+            <Link to={"/"}>
+                <img
                 src={props.image}
                 alt="Logo Digital Store"
                 className="tamanho"
                 />
+            </Link>
         </>
     )
 }

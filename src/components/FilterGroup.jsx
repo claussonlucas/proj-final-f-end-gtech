@@ -23,7 +23,6 @@ export default function FilterGroup ({ title, inputType, options }) {
         <div className="divFilterGorup">
             <h5 className="titleFilter">{title}</h5>
 
-            
             {listaOptions}
         </div>
     );
