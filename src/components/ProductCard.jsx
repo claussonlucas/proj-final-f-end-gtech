@@ -1,38 +1,10 @@
 // ProductCard.jsx
-/*
-Exemplo de como chamar:
-<ProductCard image={imgteste} name={"Sapato"} price={"20.00"} priceDiscount={"15.00"}/>
-
-<ProductCard image={imgteste} name={"Sapato"} price={"20.00"}/>
-*/
 
 //import styled from "styled-components";
 import "../styles/productCard.css";
 
 // componente para produtos
 export default function ProductCard ({image, name, price, priceDiscount=""}) {
-/* const Container = styled.section `
-    
-    & h3 {
-            padding: 5px;
-            margin: 0;
-        }
-    & .prices {
-        display: flex;
-        gap: 10px;
-        & .price {
-            color: var(--dark-gray);
-            font-size: 24px;
-            padding: 0;
-            margin: 0;
-        }
-        & .priceDiscount {
-            color: var(--dark-gray);
-            font-size: 24px;
-            padding: 0;
-            margin: 0;
-        }
-    }` */
 
     return (
         <div className="divProductCard">
@@ -41,7 +13,10 @@ export default function ProductCard ({image, name, price, priceDiscount=""}) {
 
             <div className="prices">
                 
-                {priceDiscount !== "" ?  <h4 className="priceCard" style={{color: "var(--light-gray)"}}><del>{price}</del></h4>
+                {priceDiscount !== "" ?
+                <h4 className="priceCard" style={{color: "var(--light-gray)"}}>
+                    <del>{price}</del>
+                </h4>
                 : <h4 className="priceCard">{price}</h4>}
 
                 <h4 className="priceDiscountCard">{priceDiscount}</h4>

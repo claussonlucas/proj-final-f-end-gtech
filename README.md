@@ -67,14 +67,12 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 |          |--- BuyBox.jsx
 |          |--- FilterGroup.jsx
 |          |--- Footer.jsx
-|          |--- Form.jsx
 |          |--- Gallery.jsx
 |          |--- Header.jsx
 |          |--- HeaderFull.jsx
 |          |--- HeaderMobile.jsx
 |          |--- Information.jsx
 |          |--- Logo.jsx
-|          |--- Lupa.jsx
 |          |--- MenuBar.jsx
 |          |--- MenuBarMobile.jsx
 |          |--- ModalMenuMobile.jsx

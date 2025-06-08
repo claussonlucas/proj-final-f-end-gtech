@@ -13,8 +13,6 @@ import { useEffect, useState } from "react";
 import { API } from "../service";
 
 export default function ProductListingPage() {
-    /* <h5 className={"titleFilter"}>{title}</h5>
-            <input type={inputType} id={} name={} value={}></input> */
     
     const [productsList, setProductsList] = useState([]);
 
@@ -100,8 +98,3 @@ export default function ProductListingPage() {
         </>
     )
 }
-
-/*
-inputType={"checkout"} options={"objto"}
-
-*/

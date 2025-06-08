@@ -82,14 +82,13 @@ images}) {
                 
             </div>
             
-            {/* no return */}
+            {/* mostra miniatura */}
             {showThumbs &&
                 <div className="divMiniatura">
                     <ul>{miniatura}</ul>
                 </div>
             }
 
-            
         </div>
     );
 }

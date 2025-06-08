@@ -4,8 +4,6 @@
 import "../styles/buyBox.css"
 import imgStar from "../assets/star-icon-white.svg";
 
-/* COLOCAR COR ESTRELA */
-
 export default function BuyBox ({ name, reference, stars, rating, price,
             priceDiscount, description, children }) {
 

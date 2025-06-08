@@ -20,6 +20,10 @@ export default function ProductViewPage () {
     const [linkRecomendado, setLinkRecomendado] = useState([]);
     const [recomendados, setRecomendados] = useState([]);
 
+    useEffect(() => {
+        window.scrollTo(0, 0); // Rola para o topo ao carregar a página
+    }, []);
+
     async function imagesGallery() {
         const response = await API.get('/dataProduct.json');
         setGalleryList(response.data.data);
@@ -104,9 +108,3 @@ export default function ProductViewPage () {
         </>
     );
 }
-
-/*
-radius={"4px"}
-                            shape={"square"}
-                            type={"text"}
-*/

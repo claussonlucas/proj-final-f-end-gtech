@@ -4,23 +4,7 @@
 - incluir metadata no index.html
 - zerar estilos body index.html
 
-- TIRAR STYLE COMPONENTS
-- BuyBox: página para o botão comprar
 - BUYBOX: cor estrela
-
-- ProductOptions: selecionar e mudar cor do item
-- PRODUCTOPTIONS: corrigir se square usar radius e circulo não usar
-
-
-- Decidir onde fica o H1
-
-- ver como saber a fonte de texto usada
-- distância entre parte de cima do header e menu
-
-- colocar c
-
-- criar e estilo da página cadastre
-- criar e estilo da página entrar
 
 > FEITO
 - zerar estilos index.html

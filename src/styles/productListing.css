@@ -23,3 +23,8 @@
     margin: 0;
     padding: 0;
 }
+
+.liProductList > a:link, a:visited {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
