@@ -7,9 +7,11 @@ A criação faz parte do projeto final Frontend do curso de **Desenvolvedor Web 
 O projeto segue os requisitos do projeto `Digital Store`, da escola `Digital College`, disponibilizado no repositório do site do `GitHub`, e o modelo no site `Figma`:
 
 - Link do repositório no GitHub:
+
 ```https://github.com/digitalcollegebr/projeto-digital-store/tree/main```
 
 - Link do site Figma:
+
 ```https://www.figma.com/design/cfb4F7ZXMFQmvmTn3PKI4z/DRIP-STORE---DIGITAL-COLLEGE?node-id=22-30```
 
 ## Linguagem, Ferramentas e Bibliotecas Utilizadas
@@ -181,6 +183,50 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 
 ![homepage](./doc/homepage-mobile-p7.png)
 
+<details>
+  <summary><strong>Componentes: HomePage</strong></summary>
+
+- Endereço:
+
+```
+http://localhost:5173/
+```
+
+A página **Home** é montada usando o componente principal `HomePage.jsx`, e os componentes gerais `MenuContext.jsx`, usado para a responsividade e o menu na versão mobile, e o `Layout.jsx`, que traz os componentes comuns às outras páginas, como o `Header.jsx` e o `Footer.jsx`.
+
+**Componentes Utilizados**
+- Gallery:
+
+Galeria de imagens dos produtos.
+
+```
+<Gallery  className={ }  width={ } height={ } radius={ } images={ } showThumbs/>
+```
+
+- Section:
+
+Seção que traz imagens de produtos de destaque.
+
+```
+<Section title={ } titleAlign={ } link={}>
+“Children”
+</Section>
+```
+
+- ProductListing e ProductCard:
+
+O `ProductListing.jsx` é o componente presente em outro `Section.jsx`, que mostra os componentes `ProductCard.jsx`, com imagem, nome e preço dos produtos.
+
+```
+<ProductListing products={ } />
+```
+
+```
+<ProductCard image={ } name={ } price={ } priceDiscount={ }/>
+```
+
+</details>
+
 </details>
 
 ### 2 - Página da Lista de Produtos
@@ -205,6 +251,34 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 ![homepage](./doc/produtos-mobile-p2.png)
 
 ![homepage](./doc/produtos-mobile-p3.png)
+
+<details>
+  <summary><strong>Componentes: ProductsListingPage</strong></summary>
+
+- Endereço:
+
+```
+http://localhost:5173/produtos
+```
+
+A página **Lista de Produtos** é montada usando o componente principal `ProductsListingPage.jsx`, e também com os componentes gerais `MenuContext.jsx` e o `Layout.jsx`, que traz os componentes `Header.jsx` e o `Footer.jsx`.
+
+ - A página traz elementos HTML para criar um campo para selecionar entre o menor e maior preço.
+
+**Componentes Utilizados**
+- FilterGroup:
+
+Cria campos para filtrar produtos.
+
+```
+<FilterGroup title={ } inputType={ } options={ } />
+```
+
+- Section, ProductListing e ProductCard:
+
+Os componentes `Section.jsx`, `ProductListing.jsx` e `ProductCard.jsx` são usados na página.
+
+</details>
 
 </details>
 
@@ -235,6 +309,45 @@ A terceira página contém informações de um produto específico.
 
 ![homepage](./doc/product-mobile-p3.png)
 
+<details>
+  <summary><strong>Componentes: ProductViewPage</strong></summary>
+
+- Endereço:
+
+```
+http://localhost:5173/product/:id
+```
+A página **Produto Específico** é montada usando o componente principal `ProductViewPage.jsx`, e também com os componentes gerais `MenuContext.jsx` e o `Layout.jsx`, que traz os componentes `Header.jsx` e o `Footer.jsx`.
+
+**Componentes Utilizados**
+
+ - A página usa o componente Gallery.jsx.
+
+
+- BuyBox:
+
+Apresenta as informações do produto. Como “filhos” (children), recebe o componente `ProductOptions.jsx`.
+
+```
+<BuyBox name={ } reference={ } stars={ } rating={ } price={ } priceDiscount={ } description={ } >
+“Children”
+</BuyBox>
+```
+
+- ProductOptions:
+
+Contém variações relacionadas ao produto, como tamanho e cor.
+
+```
+<ProductOptions options={ } radius={ } shape={ } type={ } />
+```
+
+- Section, ProductListing e ProductCard:
+
+Os componentes `Section.jsx`, `ProductListing.jsx` e `ProductCard.jsx` são usados na página.
+
+</details>
+
 </details>
 
 </details>
@@ -254,6 +367,10 @@ Alguns trechos de códigos foram feitos em parceria com o aluno Clailson Lucas, 
 
 O projeto segue o modelo do projeto `Digital Store`, da escola `Digital College`, disponibilizado no repositório do site do `GitHub`, e o modelo no site `Figma`:
 
-- Link do repositório no GitHub: ```https://github.com/digitalcollegebr/projeto-digital-store/tree/main```
+- Link do repositório no GitHub:
 
-- Link do site Figma: ```https://www.figma.com/design/cfb4F7ZXMFQmvmTn3PKI4z/DRIP-STORE---DIGITAL-COLLEGE?node-id=22-30```
+```https://github.com/digitalcollegebr/projeto-digital-store/tree/main```
+
+- Link do site Figma:
+
+```https://www.figma.com/design/cfb4F7ZXMFQmvmTn3PKI4z/DRIP-STORE---DIGITAL-COLLEGE?node-id=22-30```
