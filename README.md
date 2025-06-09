@@ -142,16 +142,20 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 <details>
   <summary><strong>Sobre</strong></summary>
 
+- A página principal (Home Page) contém o cabeçalho (header) com a logo da loja fictícia, barra de pesquisa, botões para entrar como usuário (Login) e cadastro, e a barra de menus para as outras páginas.
+
+- Na seção principal, mostra uma galeria de imagens de produtos, uma seção com vários produtos, e no final um rodapé (footer) com informações da loja.
+
 <details>
   <summary><strong>Componentes: HomePage</strong></summary>
+
+A página **Home** é montada usando o componente principal `HomePage.jsx`, e os componentes gerais `MenuContext.jsx`, usado para a responsividade e o menu na versão mobile, e o `Layout.jsx`, que traz os componentes comuns às outras páginas, como o `Header.jsx` e o `Footer.jsx`.
 
 - Endereço:
 
 ```
 http://localhost:5173/
 ```
-
-A página **Home** é montada usando o componente principal `HomePage.jsx`, e os componentes gerais `MenuContext.jsx`, usado para a responsividade e o menu na versão mobile, e o `Layout.jsx`, que traz os componentes comuns às outras páginas, como o `Header.jsx` e o `Footer.jsx`.
 
 **Componentes Utilizados**
 - Gallery:
@@ -186,9 +190,8 @@ O `ProductListing.jsx` é o componente presente em outro `Section.jsx`, que most
 
 </details>
 
-- A página principal (Home Page) contém o cabeçalho (header) com a logo da loja fictícia, barra de pesquisa, botões para entrar como usuário (Login) e cadastro, e a barra de menus para as outras páginas.
-
-- Na seção principal, mostra uma galeria de imagens de produtos, uma seção com vários produtos, e no final um rodapé (footer) com informações da loja.
+<details>
+  <summary><strong>Telas</strong></summary>
 
 - Página Inicial - Parte 1
  
@@ -229,6 +232,8 @@ O `ProductListing.jsx` é o componente presente em outro `Section.jsx`, que most
 
 </details>
 
+</details>
+
 ### 2 - Página da Lista de Produtos
 
 <details>
@@ -264,6 +269,9 @@ Os componentes `Section.jsx`, `ProductListing.jsx` e `ProductCard.jsx` são usad
 
 </details>
 
+<details>
+  <summary><strong>Telas</strong></summary>
+
 - Página de Produtos - Parte 1
   
 ![produtos](./doc/produtos-p1.png)
@@ -282,10 +290,14 @@ Os componentes `Section.jsx`, `ProductListing.jsx` e `ProductCard.jsx` são usad
 
 </details>
 
+</details>
+
 ### 3 - Página de um Produto Específico
 
 <details>
   <summary><strong>Sobre</strong></summary>
+
+A terceira página contém informações de um produto específico.
 
 <details>
   <summary><strong>Componentes: ProductViewPage</strong></summary>
@@ -326,7 +338,8 @@ Os componentes `Section.jsx`, `ProductListing.jsx` e `ProductCard.jsx` são usad
 
 </details>
 
-A terceira página contém informações de um produto específico.
+<details>
+  <summary><strong>Sobre</strong></summary>
 
 - Página Product - Parte 1
   
@@ -352,7 +365,9 @@ A terceira página contém informações de um produto específico.
 
 </details>
 
-##Instalação
+</details>
+
+## Instalação
 <details>
   <summary><strong>Informações</strong></summary>
 
