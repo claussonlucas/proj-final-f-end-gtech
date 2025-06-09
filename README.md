@@ -142,9 +142,9 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 <details>
   <summary><strong>Sobre</strong></summary>
 
-- A página principal (Home Page) contém o cabeçalho (header) com a logo da loja fictícia, barra de pesquisa, botões para entrar como usuário (Login) e cadastro, e a barra de menus para as outras páginas.
+A página principal (Home Page) contém o cabeçalho (header) com a logo da loja fictícia, barra de pesquisa, botões para entrar como usuário (Login) e cadastro, e a barra de menus para as outras páginas.
 
-- Na seção principal, mostra uma galeria de imagens de produtos, uma seção com vários produtos, e no final um rodapé (footer) com informações da loja.
+Na seção principal, mostra uma galeria de imagens de produtos, uma seção com vários produtos, e no final um rodapé (footer) com informações da loja.
 
 <details>
   <summary><strong>Componentes: HomePage</strong></summary>
@@ -239,7 +239,7 @@ O `ProductListing.jsx` é o componente presente em outro `Section.jsx`, que most
 <details>
   <summary><strong>Sobre</strong></summary>
 
-- A segunda página mostra uma lista de produtos, com opções para filtrar (não funcionais).
+A segunda página mostra uma lista de produtos, com opções para filtrar (não funcionais).
 
 <details>
   <summary><strong>Componentes: ProductsListingPage</strong></summary>
@@ -339,7 +339,7 @@ Os componentes `Section.jsx`, `ProductListing.jsx` e `ProductCard.jsx` são usad
 </details>
 
 <details>
-  <summary><strong>Sobre</strong></summary>
+  <summary><strong>Telas</strong></summary>
 
 - Página Product - Parte 1
   
