@@ -47,9 +47,9 @@ A estrutura de pastas segue o modelo de organização recomendado pelo projeto `
 - O `index.html` é o arquivo principal, que vai receber todos os componentes criados. O `TODO.txt` contém lembretes utilizados para criação do projeto.
 A pasta `src` contém os arquivos `main.jsx`, que substitui o elemento que tem o ID 'root' no `index.html`, pelo componente `App.jsx`. O `App.jsx`, é responsável pelas rotas do site. Contém também os arquivos CSS de cada um.
 
-- Na pasta `src`, também estão as principais pastas do projeto, como a pasta `components`, com os arquivos dos componentes React. A pasta `pages` armazena os arquivos relacionados às páginas do site. A pasta `service` tem o arquivo `index.js`, que serve para importar o `Axios`, que ajuda a montar o URL para o recebimento de dados das requisições do banco de dados de teste. Na pasta `styles` contém os arquivos CSS para estilos dos componentes. A pasta `assets` possui arquivos de imagen com extensão `.svg`.
+- Na pasta `src`, também estão as principais pastas do projeto, como a pasta `components`, com os arquivos dos componentes React. A pasta `pages` armazena os arquivos relacionados às páginas do site. A pasta `service` tem o arquivo `index.js`, que serve para importar o `Axios`, que ajuda a montar o URL para o recebimento de dados do banco de dados de teste feitas pelas requisições. Na pasta `styles` contém os arquivos CSS para estilos dos componentes. A pasta `assets` possui arquivos de imagen com extensão `.svg`.
 
-- A pasta `data` possui os arquivos utilizados como um banco de dados para teste, para verificar se o aplicativo que serve como Front End consegue receber dados entregues por um servidor (que não está no escopo do projeto).
+- A pasta `data` possui os arquivos utilizados como um banco de dados para teste, para verificar se o aplicativo consegue receber dados entregues por um servidor (que não está no escopo do projeto).
 
 - A `public` é a pasta onde se encontram as imagens usadas para os produtos da loja fictícia.
 E na pasta `doc` estão as imagens usadas nesse `README.md`.
@@ -142,47 +142,6 @@ E na pasta `doc` estão as imagens usadas nesse `README.md`.
 <details>
   <summary><strong>Sobre</strong></summary>
 
-- A página principal (Home Page) contém o cabeçalho (header) com a logo da loja fictícia, barra de pesquisa, botões para entrar como usuário (Login) e cadastro, e a barra de menus para as outras páginas.
-
-- Na seção principal, mostra uma galeria de imagens de produtos, uma seção com vários produtos, e no final um rodapé (footer) com informações da loja.
-
-- Página Inicial - Parte 1
- 
-![homepage](./doc/homepage-p1.png)
-
-- Página Inicial - Parte 2
-
-![homepage](./doc/homepage-p2.png)
-
-
-- Página Inicial - Parte 3
-
-![homepage](./doc/homepage-p3.png)
-
-- Página Inicial - Parte 4
-
-![homepage](./doc/homepage-p4.png)
-
-- Página Inicial - Parte 5
-
-![homepage](./doc/homepage-p5.png)
-
-(Versão para telas menores)
-
-![homepage](./doc/homepage-mobile-p1.png)
-
-![homepage](./doc/homepage-mobile-p2.png)
-
-![homepage](./doc/homepage-mobile-p3.png)
-
-![homepage](./doc/homepage-mobile-p4.png)
-
-![homepage](./doc/homepage-mobile-p5.png)
-
-![homepage](./doc/homepage-mobile-p6.png)
-
-![homepage](./doc/homepage-mobile-p7.png)
-
 <details>
   <summary><strong>Componentes: HomePage</strong></summary>
 
@@ -227,6 +186,47 @@ O `ProductListing.jsx` é o componente presente em outro `Section.jsx`, que most
 
 </details>
 
+- A página principal (Home Page) contém o cabeçalho (header) com a logo da loja fictícia, barra de pesquisa, botões para entrar como usuário (Login) e cadastro, e a barra de menus para as outras páginas.
+
+- Na seção principal, mostra uma galeria de imagens de produtos, uma seção com vários produtos, e no final um rodapé (footer) com informações da loja.
+
+- Página Inicial - Parte 1
+ 
+![homepage](./doc/homepage-p1.png)
+
+- Página Inicial - Parte 2
+
+![homepage](./doc/homepage-p2.png)
+
+
+- Página Inicial - Parte 3
+
+![homepage](./doc/homepage-p3.png)
+
+- Página Inicial - Parte 4
+
+![homepage](./doc/homepage-p4.png)
+
+- Página Inicial - Parte 5
+
+![homepage](./doc/homepage-p5.png)
+
+(Versão para telas menores)
+
+![homepage](./doc/homepage-mobile-p1.png)
+
+![homepage](./doc/homepage-mobile-p2.png)
+
+![homepage](./doc/homepage-mobile-p3.png)
+
+![homepage](./doc/homepage-mobile-p4.png)
+
+![homepage](./doc/homepage-mobile-p5.png)
+
+![homepage](./doc/homepage-mobile-p6.png)
+
+![homepage](./doc/homepage-mobile-p7.png)
+
 </details>
 
 ### 2 - Página da Lista de Produtos
@@ -235,22 +235,6 @@ O `ProductListing.jsx` é o componente presente em outro `Section.jsx`, que most
   <summary><strong>Sobre</strong></summary>
 
 - A segunda página mostra uma lista de produtos, com opções para filtrar (não funcionais).
-
-- Página de Produtos - Parte 1
-  
-![produtos](./doc/produtos-p1.png)
-
-- Página de Produtos - Parte 2
-  
-![produtos](./doc/produtos-p2.png)
-
-(Versão para telas menores)
-
-![homepage](./doc/produtos-mobile-p1.png)
-
-![homepage](./doc/produtos-mobile-p2.png)
-
-![homepage](./doc/produtos-mobile-p3.png)
 
 <details>
   <summary><strong>Componentes: ProductsListingPage</strong></summary>
@@ -280,34 +264,28 @@ Os componentes `Section.jsx`, `ProductListing.jsx` e `ProductCard.jsx` são usad
 
 </details>
 
+- Página de Produtos - Parte 1
+  
+![produtos](./doc/produtos-p1.png)
+
+- Página de Produtos - Parte 2
+  
+![produtos](./doc/produtos-p2.png)
+
+(Versão para telas menores)
+
+![homepage](./doc/produtos-mobile-p1.png)
+
+![homepage](./doc/produtos-mobile-p2.png)
+
+![homepage](./doc/produtos-mobile-p3.png)
+
 </details>
 
 ### 3 - Página de um Produto Específico
 
 <details>
   <summary><strong>Sobre</strong></summary>
-
-A terceira página contém informações de um produto específico.
-
-- Página Product - Parte 1
-  
-![produtos](./doc/product-p1.png)
-
-- Página Product - Parte 2
-  
-![produtos](./doc/product-p2.png)
-
-- Página Product - Parte 3
-  
-![produtos](./doc/product-p3.png)
-
-(Versão para telas menores)
-
-![homepage](./doc/product-mobile-p1.png)
-
-![homepage](./doc/product-mobile-p2.png)
-
-![homepage](./doc/product-mobile-p3.png)
 
 <details>
   <summary><strong>Componentes: ProductViewPage</strong></summary>
@@ -348,8 +326,93 @@ Os componentes `Section.jsx`, `ProductListing.jsx` e `ProductCard.jsx` são usad
 
 </details>
 
+A terceira página contém informações de um produto específico.
+
+- Página Product - Parte 1
+  
+![produtos](./doc/product-p1.png)
+
+- Página Product - Parte 2
+  
+![produtos](./doc/product-p2.png)
+
+- Página Product - Parte 3
+  
+![produtos](./doc/product-p3.png)
+
+(Versão para telas menores)
+
+![homepage](./doc/product-mobile-p1.png)
+
+![homepage](./doc/product-mobile-p2.png)
+
+![homepage](./doc/product-mobile-p3.png)
+
 </details>
 
+</details>
+
+##Instalação
+<details>
+  <summary><strong>Informações</strong></summary>
+
+- Baixar Node.js: 
+
+Link:
+
+```
+https://nodejs.org/pt
+```
+
+- Criar projeto React com o Vite: 
+
+```
+npm create vite
+```
+
+> Seguir as opções definir nome do projeto, escolher React, a linguagem JavaScript, e criar uma pasta.
+
+- Instalar pacotes node modules: 
+
+```
+npm install
+```
+
+- Abrir o VScode:
+
+```
+code .
+```
+
+- Instalar bibliotecas Prime React, Prime Flex, Prime Icons e Styled Components:
+
+```
+npm i primereact primeflex primeicons styled-components
+```
+
+- Instalar biblioteca React Router Dom:
+  
+```
+npm i react-router-dom
+```
+
+- Instalar biblioteca React Hook Form:
+  
+```
+npm i react-hook-form
+```
+
+- Instalar biblioteca Axios:
+  
+```
+npm i axios
+```
+
+- Rodar o aplicativo:
+
+```
+npm run dev
+```
 </details>
 
 </details>
